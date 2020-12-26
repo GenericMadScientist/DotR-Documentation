@@ -7,6 +7,10 @@ you will probably want to peruse
 I've accumulated enough information that working with the Google doc has become
 incredibly inconvenient, hence the move to here.
 
+These docs are created by using Doxygen on header files. The generated docs are
+available at
+[https://genericmadscientist.github.io/DotR-Documentation](https://genericmadscientist.github.io/DotR-Documentation).
+
 I assume familiarity with the C programming language. For modding the game it
 would also be useful to have the PS2 SDK docs and some knowledge of MIPS
 assembly.
