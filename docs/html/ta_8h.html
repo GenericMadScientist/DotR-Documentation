@@ -67,17 +67,63 @@ $(function() {
 <div class="title">ta.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="structs_8h_source.html">structs.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="structs_8h_source.html">structs.h</a>&quot;</code><br />
 </div>
 <p><a href="ta_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ae24483c87d12d8fd386ab3433bf3180d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ae24483c87d12d8fd386ab3433bf3180d">Ta_GetCurrentSide</a> (int side, int pos)</td></tr>
+<tr class="memdesc:ae24483c87d12d8fd386ab3433bf3180d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the side controlling a unit specified by a side and position.  <a href="ta_8h.html#ae24483c87d12d8fd386ab3433bf3180d">More...</a><br /></td></tr>
+<tr class="separator:ae24483c87d12d8fd386ab3433bf3180d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52dee425c1125888131c3480da0faa11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a52dee425c1125888131c3480da0faa11">Ta_IsUnitControl2</a> (<a class="el" href="struct_unit.html">Unit</a> *unit)</td></tr>
 <tr class="memdesc:a52dee425c1125888131c3480da0faa11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the side controlling a unit.  <a href="ta_8h.html#a52dee425c1125888131c3480da0faa11">More...</a><br /></td></tr>
 <tr class="separator:a52dee425c1125888131c3480da0faa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9430cc6415b757031f9c2ab571a1d23b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a9430cc6415b757031f9c2ab571a1d23b">Ta_SideMatch</a> (int sideA, int sideB, <a class="el" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a> compMode)</td></tr>
+<tr class="memdesc:a9430cc6415b757031f9c2ab571a1d23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if two sides match according to compMode.  <a href="ta_8h.html#a9430cc6415b757031f9c2ab571a1d23b">More...</a><br /></td></tr>
+<tr class="separator:a9430cc6415b757031f9c2ab571a1d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ae24483c87d12d8fd386ab3433bf3180d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24483c87d12d8fd386ab3433bf3180d">&#9670;&nbsp;</a></span>Ta_GetCurrentSide()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ta_GetCurrentSide </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the side controlling a unit specified by a side and position. </p>
+<p>If SzDuel_GetUnitStatus(unit, pos, 1) returns false, side is returned. Otherwise !side is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The side controlling the specified unit </dd></dl>
+
+</div>
+</div>
 <a id="a52dee425c1125888131c3480da0faa11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52dee425c1125888131c3480da0faa11">&#9670;&nbsp;</a></span>Ta_IsUnitControl2()</h2>
 
@@ -103,6 +149,52 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The side controlling unit </dd></dl>
+
+</div>
+</div>
+<a id="a9430cc6415b757031f9c2ab571a1d23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9430cc6415b757031f9c2ab571a1d23b">&#9670;&nbsp;</a></span>Ta_SideMatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_SideMatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sideA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sideB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a>&#160;</td>
+          <td class="paramname"><em>compMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return if two sides match according to compMode. </p>
+<p>If compMode is ALWAYS_MATCH, the result is true. If compMode is MATCH_IF_EQUAL, the result is sideA == sideB. If compMode is MATCH_IF_NOT_EQUAL, the result is sideA == !sideB. If compMode is NEVER_MATCH, the result is false. If compMode is anything else, the result is false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sideA</td><td>The first side to compare </td></tr>
+    <tr><td class="paramname">sideB</td><td>The second side to compare </td></tr>
+    <tr><td class="paramname">compMode</td><td>The way to compare the two sides </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the two sides match </dd></dl>
 
 </div>
 </div>

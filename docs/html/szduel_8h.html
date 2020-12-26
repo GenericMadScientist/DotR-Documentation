@@ -107,6 +107,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a19af2b37525fed25189a38c96bd18744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a19af2b37525fed25189a38c96bd18744">SzDuel_GetUnitLoc</a> (int side, int pos)</td></tr>
 <tr class="memdesc:a19af2b37525fed25189a38c96bd18744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the location of the unit specified by a side and position.  <a href="szduel_8h.html#a19af2b37525fed25189a38c96bd18744">More...</a><br /></td></tr>
 <tr class="separator:a19af2b37525fed25189a38c96bd18744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb5bb462a7b96a9c9012e5f1531d370"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a2bb5bb462a7b96a9c9012e5f1531d370">SzDuel_GetUnitStatus</a> (int side, int pos, int flag)</td></tr>
+<tr class="memdesc:a2bb5bb462a7b96a9c9012e5f1531d370"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return one of the status flags of the unit specified by a side and position.  <a href="szduel_8h.html#a2bb5bb462a7b96a9c9012e5f1531d370">More...</a><br /></td></tr>
+<tr class="separator:a2bb5bb462a7b96a9c9012e5f1531d370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60078c8bad864463f2eca62a3ff0941a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a60078c8bad864463f2eca62a3ff0941a">SzDuel_GetUnitSummonOrder</a> (int side, int pos)</td></tr>
+<tr class="memdesc:a60078c8bad864463f2eca62a3ff0941a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the summonOrder of the unit specified by a side and position.  <a href="szduel_8h.html#a60078c8bad864463f2eca62a3ff0941a">More...</a><br /></td></tr>
+<tr class="separator:a60078c8bad864463f2eca62a3ff0941a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -566,6 +572,91 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The position of the specified <a class="el" href="struct_unit.html">Unit</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2bb5bb462a7b96a9c9012e5f1531d370"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb5bb462a7b96a9c9012e5f1531d370">&#9670;&nbsp;</a></span>SzDuel_GetUnitStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SzDuel_GetUnitStatus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return one of the status flags of the unit specified by a side and position. </p>
+<p>If the unit is not valid or flag does not lie between 0 and 5 inclusive the function returns false. Otherwise the function returns whether the bit status &amp; (0x1 &lt;&lt; flag) is set.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+    <tr><td class="paramname">flag</td><td>The index of the flag in unit's status </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The kind of the specified <a class="el" href="struct_unit.html">Unit</a> </dd></dl>
+
+</div>
+</div>
+<a id="a60078c8bad864463f2eca62a3ff0941a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60078c8bad864463f2eca62a3ff0941a">&#9670;&nbsp;</a></span>SzDuel_GetUnitSummonOrder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SzDuel_GetUnitSummonOrder </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the summonOrder of the unit specified by a side and position. </p>
+<p>If there is no unit given by (side, pos), -1 is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The summonOrder of the specified <a class="el" href="struct_unit.html">Unit</a> </dd></dl>
 
 </div>
 </div>

@@ -107,8 +107,7 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>unk_0x42</b> [2]</td>
 <tr class="memitem:a0ed476d08932a117360edb38020aa68b"><td class="memItemLeft" align="right" valign="top"><a id="a0ed476d08932a117360edb38020aa68b"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><b>unk_0x46</b></td></tr>
 <tr class="separator:a0ed476d08932a117360edb38020aa68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe1f5ff52767fd7ad803ed79b435824c"><td class="memItemLeft" align="right" valign="top"><a id="abe1f5ff52767fd7ad803ed79b435824c"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>summonOrder</b></td></tr>
+<tr class="memitem:abe1f5ff52767fd7ad803ed79b435824c"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_unit.html#abe1f5ff52767fd7ad803ed79b435824c">summonOrder</a></td></tr>
 <tr class="separator:abe1f5ff52767fd7ad803ed79b435824c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae63ce57632c517d6991dfcc0204d482d"><td class="memItemLeft" align="right" valign="top"><a id="ae63ce57632c517d6991dfcc0204d482d"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>lvRev</b></td></tr>
@@ -313,7 +312,22 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>unk_0x58</b> [4]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A series of flags. status &amp; 0b10 is set when the unit is under opposition control, due to cards like Brain Control. </p>
+<p>A series of flags. status &amp; 0b000001 is set if the unit has moved. status &amp; 0b000010 is set when the unit is under opposition control, due to cards like Brain Control. status &amp; 0b000100 is set if the card is showing as face-up. status &amp; 0b001000 is set if the card is showing as being in defense position. status &amp; 0b010000 is set if the card is actually face-up. status &amp; 0b100000 is set if the card is actually in defense position. </p>
+
+</div>
+</div>
+<a id="abe1f5ff52767fd7ad803ed79b435824c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1f5ff52767fd7ad803ed79b435824c">&#9670;&nbsp;</a></span>summonOrder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char Unit::summonOrder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Starts at 0 for the first summoned card, 1 for the next, etc. </p>
 
 </div>
 </div>

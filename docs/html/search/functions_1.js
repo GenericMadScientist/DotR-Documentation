@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['pow_65',['pow',['../stdlib_8h.html#a27382c762927551c5849a43cbd0d0e71',1,'stdlib.h']]]
+  ['getcap_82',['GetCap',['../global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db',1,'global.h']]],
+  ['getparcap_83',['GetParCap',['../global_8h.html#a931edd4c23ae4a67b35678e9a3e9ce53',1,'global.h']]]
 ];

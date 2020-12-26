@@ -72,11 +72,102 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0d59c9c43cae2873e93194cc2c8970bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a0d59c9c43cae2873e93194cc2c8970bd">ConvUnitIDtoFlagList</a> (int flagList, int side, int pos)</td></tr>
+<tr class="memdesc:a0d59c9c43cae2873e93194cc2c8970bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a unit to a flaglist.  <a href="global_8h.html#a0d59c9c43cae2873e93194cc2c8970bd">More...</a><br /></td></tr>
+<tr class="separator:a0d59c9c43cae2873e93194cc2c8970bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2aaf290fb1dd1158461ca23e1925db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db">GetCap</a> (int cap, int value)</td></tr>
+<tr class="memdesc:a3e2aaf290fb1dd1158461ca23e1925db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounds a value in a way depending on the cap.  <a href="global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db">More...</a><br /></td></tr>
+<tr class="separator:a3e2aaf290fb1dd1158461ca23e1925db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a931edd4c23ae4a67b35678e9a3e9ce53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a931edd4c23ae4a67b35678e9a3e9ce53">GetParCap</a> (int stat)</td></tr>
 <tr class="memdesc:a931edd4c23ae4a67b35678e9a3e9ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps a stat between 0 and 9999 inclusive.  <a href="global_8h.html#a931edd4c23ae4a67b35678e9a3e9ce53">More...</a><br /></td></tr>
 <tr class="separator:a931edd4c23ae4a67b35678e9a3e9ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0d59c9c43cae2873e93194cc2c8970bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d59c9c43cae2873e93194cc2c8970bd">&#9670;&nbsp;</a></span>ConvUnitIDtoFlagList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ConvUnitIDtoFlagList </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flagList</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a unit to a flaglist. </p>
+<p>A flaglist is a way of representing a flag for every unit. The lowest bit is the Yorkist Leader, going up to Yorkist unit 10, then Lancastrian Leader, going up to Lancastrian unit 10. This function copies flagList, sets the bit corresponding to (side, pos), then returns the new flaglist.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">flagList</td><td>The flaglist to add the unit to </td></tr>
+    <tr><td class="paramname">side</td><td>The side of the unit to add </td></tr>
+    <tr><td class="paramname">pos</td><td>The position of the unit to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The modified flaglist </dd></dl>
+
+</div>
+</div>
+<a id="a3e2aaf290fb1dd1158461ca23e1925db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2aaf290fb1dd1158461ca23e1925db">&#9670;&nbsp;</a></span>GetCap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GetCap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bounds a value in a way depending on the cap. </p>
+<p>If the cap is 6, 7, 500, 1500, or 9999, GetCap returns min(cap, value). If the cap is 0 or 1, GetCap returns max(cap, value). Otherwise 0 is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cap</td><td>The cap to apply </td></tr>
+    <tr><td class="paramname">value</td><td>The value to cap </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The capped value </dd></dl>
+
+</div>
+</div>
 <a id="a931edd4c23ae4a67b35678e9a3e9ce53"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a931edd4c23ae4a67b35678e9a3e9ce53">&#9670;&nbsp;</a></span>GetParCap()</h2>
 

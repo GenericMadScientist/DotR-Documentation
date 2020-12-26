@@ -75,6 +75,7 @@ struct Unit {
     /*! SzDuel_GetUnit checks if this is greater than 10. */
     unsigned char slot;
     char unk_0x46;
+    /*! Starts at 0 for the first summoned card, 1 for the next, etc. */
     unsigned char summonOrder;
     unsigned char lvRev;
     unsigned char curseRest;
@@ -88,8 +89,14 @@ struct Unit {
     unsigned char openRate;
     char unk_0x55[2];
     /*! A series of flags.
-     *  status & 0b10 is set when the unit is under opposition control, due to
-     *  cards like Brain Control.
+     *  status & 0b000001 is set if the unit has moved.
+     *  status & 0b000010 is set when the unit is under opposition control, due
+     *  to cards like Brain Control.
+     *  status & 0b000100 is set if the card is showing as face-up.
+     *  status & 0b001000 is set if the card is showing as being in defense
+     *  position.
+     *  status & 0b010000 is set if the card is actually face-up.
+     *  status & 0b100000 is set if the card is actually in defense position.
      */
     unsigned char status;
     char unk_0x58[4];

@@ -57,4 +57,12 @@ enum Kind {
     RITUAL = 160
 };
 
+/*! Represents a policy to use with matching sides. */
+enum SideComp {
+    NEVER_MATCH = 0,
+    MATCH_IF_EQUAL = 1,
+    MATCH_IF_NOT_EQUAL = 2,
+    ALWAYS_MATCH = 3
+};
+
 #endif

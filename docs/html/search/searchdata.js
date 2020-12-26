@@ -3,9 +3,9 @@ var indexSectionsWithContent =
   0: "acdefgklmprstu",
   1: "cemu",
   2: "egst",
-  3: "gprst",
+  3: "cgprst",
   4: "acdfklmstu",
-  5: "afk",
+  5: "afks",
   6: "dfr"
 };
 

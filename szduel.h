@@ -42,7 +42,7 @@ extern MapInfo mapInfo[7][7];
  *  side is negative
  *  @return Pointer to the requested Unit
  */
-Unit *SzDuel_GetCardInfo(int side, int pos);
+Unit* SzDuel_GetCardInfo(int side, int pos);
 
 /** @brief Gets the terrain type at a specified position.
  *
@@ -72,7 +72,7 @@ int SzDuel_GetField(int col, int row);
  *  side is negative
  *  @return Pointer to the requested Unit
  */
-Unit *SzDuel_GetUnit(int side, int pos);
+Unit* SzDuel_GetUnit(int side, int pos);
 
 /** @brief Return the attack of the unit specified by a side and position, which
  *  may or may not include boosts.
@@ -102,7 +102,7 @@ int SzDuel_GetUnitAP(int side, int pos, bool ignoreBoosts);
  *  @param ignoreBoosts Whether to add unit->apBoost or not
  *  @return The attack of the unit
  */
-int SzDuel_GetUnitAP2(Unit *unit, bool ignoreBoosts);
+int SzDuel_GetUnitAP2(Unit* unit, bool ignoreBoosts);
 
 /** @brief Return the attribute of the unit specified by a side and position.
  *
@@ -157,7 +157,7 @@ int SzDuel_GetUnitDP(int side, int pos, bool ignoreBoosts);
  *  @param ignoreBoosts Whether to add unit->dpBoost or not
  *  @return Thedefense of the unit
  */
-int SzDuel_GetUnitDP2(Unit *unit, bool ignoreBoosts);
+int SzDuel_GetUnitDP2(Unit* unit, bool ignoreBoosts);
 
 /** @brief Return the kind of the unit specified by a side and position.
  *
@@ -184,5 +184,33 @@ int SzDuel_GetUnitKind(int side, int pos);
  *  @return The position of the specified Unit
  */
 int SzDuel_GetUnitLoc(int side, int pos);
+
+/** @brief Return one of the status flags of the unit specified by a side and
+ *  position.
+ *
+ *  If the unit is not valid or flag does not lie between 0 and 5 inclusive the
+ *  function returns false. Otherwise the function returns whether the bit
+ *  status & (0x1 << flag) is set.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param flag The index of the flag in unit's status
+ *  @return The kind of the specified Unit
+ */
+bool SzDuel_GetUnitStatus(int side, int pos, int flag);
+
+/** @brief Return the summonOrder of the unit specified by a side and position.
+ *
+ *  If there is no unit given by (side, pos), -1 is returned.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @return The summonOrder of the specified Unit
+ */
+int SzDuel_GetUnitSummonOrder(int side, int pos);
 
 #endif

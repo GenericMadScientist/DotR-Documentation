@@ -10,7 +10,7 @@
  *  Models 20 to 24 appear to be Lancastrian monsters, 25 to 29 Yorkist
  *  monsters, 30 Lancastrian Deck Leader, and 31 Yorkist Deck Leader.
  */
-extern Model *models[84];
+extern Model* models[84];
 
 /** @brief Gets the type of the specified model.
  *
