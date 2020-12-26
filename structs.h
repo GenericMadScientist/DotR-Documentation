@@ -10,7 +10,20 @@ struct CardConstInfo {
     unsigned char deckCost;
     unsigned short effectId;
     unsigned short xaxId;
+    /*! A bitset containing the default AP and some flags.
+     *  apWithFlags & 0x1FFF is the default AP
+     *  apWithFlags & 0x2000 is if the card has an image in DATA/PICPACK.MRG.
+     *  apWithFlags & 0x4000 is if the card's password will work.
+     *  apWIthFlags & 0x8000 is if the card can be received from reincarnation.
+     */
     unsigned short apWithFlags;
+    /*! A bitset containing the default DP and some flags.
+     *  dpWithFlags & 0x1FFF is the default DP
+     *  dpWithFlags & 0x2000 is if the card appears in slots normally.
+     *  dpWithFlags & 0x4000 is if the card is a slot rare, with the exception
+     *  of Brain Control. This is ignored for the special slot rares.
+     *  dpWIthFlags & 0x8000 is not understood.
+     */
     unsigned short dpWithFlags;
     unsigned char password[8];
 };
@@ -35,12 +48,18 @@ struct Model {
 
 /*! The main struct that represents a Deck Leader or card on the field. */
 struct Unit {
+    /*! The CardConstInfo referring to the original data for a card. */
     CardConstInfo* constInfo;
     char unk_0x4[4];
     CardEffects cardEffects;
     char unk_0x30[8];
+    /*! The total boosts and debuffs being applied to the card's attack. Does
+     *  not include terrain or leader effects, or Shapesnatch's effect. */
     short apBoost;
+    /*! The total boosts and debuffs being applied to the card's defense. Does
+     *  not include terrain or leader effects, or Shapesnatch's effect. */
     short dpBoost;
+    /*! The card number of the unit (000 BEWD -> 853 Dark Magic Ritual). */
     unsigned short cardNo;
     /*! The kind of the unit. See Kind enum. */
     unsigned char kind;

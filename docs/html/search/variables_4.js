@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mapinfo_69',['mapInfo',['../szduel_8h.html#a6efa6cd7ac6a97eb9d0412a07c2e7b79',1,'szduel.h']]],
-  ['models_70',['models',['../szmodel_8h.html#abeb152a3e7914956af5e2fd0acb75d9e',1,'szmodel.h']]]
+  ['kind_88',['kind',['../struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e',1,'Unit']]]
 ];

@@ -74,6 +74,36 @@ int SzDuel_GetField(int col, int row);
  */
 Unit *SzDuel_GetUnit(int side, int pos);
 
+/** @brief Return the attack of the unit specified by a side and position, which
+ *  may or may not include boosts.
+ *
+ *  If the unit is invalid or its constInfo is NULL then this function returns
+ *  -1. The function then takes constInfo->apWithFlags & 0x1FFF and will add the
+ *  unit's apBoost if ignoreBoosts is false. The result is clamped to lie
+ *  between 0 and 9999 inclusive and then returned.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param ignoreBoosts Whether to add the unit's apBoost or not
+ *  @return The attack of the unit
+ */
+int SzDuel_GetUnitAP(int side, int pos, bool ignoreBoosts);
+
+/** @brief Return the attack of unit, which may or may not include boosts.
+ *
+ *  If unit or unit->constInfo is NULL then this function returns -1. The
+ *  function then takes unit->constInfo->apWithFlags & 0x1FFF and will add
+ *  unit->apBoost if ignoreBoosts is false. The result is clamped to lie between
+ *  0 and 9999 inclusive and then returned.
+ *
+ *  @param unit Pointer to the unit to get the attack of
+ *  @param ignoreBoosts Whether to add unit->apBoost or not
+ *  @return The attack of the unit
+ */
+int SzDuel_GetUnitAP2(Unit *unit, bool ignoreBoosts);
+
 /** @brief Return the attribute of the unit specified by a side and position.
  *
  *  The return value should be interpreted as a member of the Attribute enum.
@@ -86,6 +116,48 @@ Unit *SzDuel_GetUnit(int side, int pos);
  *  @return The attribute of the specified Unit
  */
 int SzDuel_GetUnitAttr(int side, int pos);
+
+/** @brief Return the card number of the unit specified by a side and position.
+ *
+ *  If there is no unit given by (side, pos), then instead -1 is returned.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @return The card number of the specified Unit
+ */
+int SzDuel_GetUnitCardNo(int side, int pos);
+
+/** @brief Return the defense of the unit specified by a side and position,
+ *  which may or may not include boosts.
+ *
+ *  If the unit is invalid or its constInfo is NULL then this function returns
+ *  -1. The function then takes constInfo->dpWithFlags & 0x1FFF and will add the
+ *  unit's dpBoost if ignoreBoosts is false. The result is clamped to lie
+ *  between 0 and 9999 inclusive and then returned.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param ignoreBoosts Whether to add the unit's dpBoost or not
+ *  @return The defense of the unit
+ */
+int SzDuel_GetUnitDP(int side, int pos, bool ignoreBoosts);
+
+/** @brief Return the defense of unit, which may or may not include boosts.
+ *
+ *  If unit or unit->constInfo is NULL then this function returns -1. The
+ *  function then takes unit->constInfo->dpWithFlags & 0x1FFF and will add
+ *  unit->dpBoost if ignoreBoosts is false. The result is clamped to lie between
+ *  0 and 9999 inclusive and then returned.
+ *
+ *  @param unit Pointer to the unit to get the defense of
+ *  @param ignoreBoosts Whether to add unit->dpBoost or not
+ *  @return Thedefense of the unit
+ */
+int SzDuel_GetUnitDP2(Unit *unit, bool ignoreBoosts);
 
 /** @brief Return the kind of the unit specified by a side and position.
  *

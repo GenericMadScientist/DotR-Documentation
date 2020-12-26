@@ -88,16 +88,45 @@ unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>effectId</b
 <tr class="memitem:a1d7facf28c5e01a69237f4e793b46cda"><td class="memItemLeft" align="right" valign="top"><a id="a1d7facf28c5e01a69237f4e793b46cda"></a>
 unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>xaxId</b></td></tr>
 <tr class="separator:a1d7facf28c5e01a69237f4e793b46cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0dadc2203ad21a559fd90f81c9e02db"><td class="memItemLeft" align="right" valign="top"><a id="ad0dadc2203ad21a559fd90f81c9e02db"></a>
-unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>apWithFlags</b></td></tr>
+<tr class="memitem:ad0dadc2203ad21a559fd90f81c9e02db"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_card_const_info.html#ad0dadc2203ad21a559fd90f81c9e02db">apWithFlags</a></td></tr>
 <tr class="separator:ad0dadc2203ad21a559fd90f81c9e02db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26915a080456e846d932b2b6542d2148"><td class="memItemLeft" align="right" valign="top"><a id="a26915a080456e846d932b2b6542d2148"></a>
-unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>dpWithFlags</b></td></tr>
+<tr class="memitem:a26915a080456e846d932b2b6542d2148"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_card_const_info.html#a26915a080456e846d932b2b6542d2148">dpWithFlags</a></td></tr>
 <tr class="separator:a26915a080456e846d932b2b6542d2148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeead8612926c54c4ea6f8a106740b053"><td class="memItemLeft" align="right" valign="top"><a id="aeead8612926c54c4ea6f8a106740b053"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>password</b> [8]</td></tr>
 <tr class="separator:aeead8612926c54c4ea6f8a106740b053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="ad0dadc2203ad21a559fd90f81c9e02db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0dadc2203ad21a559fd90f81c9e02db">&#9670;&nbsp;</a></span>apWithFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short CardConstInfo::apWithFlags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A bitset containing the default AP and some flags. apWithFlags &amp; 0x1FFF is the default AP apWithFlags &amp; 0x2000 is if the card has an image in DATA/PICPACK.MRG. apWithFlags &amp; 0x4000 is if the card's password will work. apWIthFlags &amp; 0x8000 is if the card can be received from reincarnation. </p>
+
+</div>
+</div>
+<a id="a26915a080456e846d932b2b6542d2148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26915a080456e846d932b2b6542d2148">&#9670;&nbsp;</a></span>dpWithFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short CardConstInfo::dpWithFlags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A bitset containing the default DP and some flags. dpWithFlags &amp; 0x1FFF is the default DP dpWithFlags &amp; 0x2000 is if the card appears in slots normally. dpWithFlags &amp; 0x4000 is if the card is a slot rare, with the exception of Brain Control. This is ignored for the special slot rares. dpWIthFlags &amp; 0x8000 is not understood. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="structs_8h_source.html">structs.h</a></li>
 </ul>

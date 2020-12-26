@@ -76,84 +76,90 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> deckCost;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> effectId;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> xaxId;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> apWithFlags;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> dpWithFlags;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> password[8];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_effect.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_effect.html">Effect</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> type;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> data;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="union_card_effects.html">   23</a></span>&#160;<span class="keyword">union </span><a class="code" href="union_card_effects.html">CardEffects</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="struct_effect.html">Effect</a> effects[5];</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> leaderAbilities[20];</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_model.html">   29</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_model.html">Model</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">char</span> unk_0x0[499];</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_model.html#a284ead502c6524f8c0b22ee7434a8505">   32</a></span>&#160;    <span class="keywordtype">signed</span> <span class="keywordtype">char</span> <a class="code" href="struct_model.html#a284ead502c6524f8c0b22ee7434a8505">type</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">char</span> unk_0x1F4[27];</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_card_const_info.html#ad0dadc2203ad21a559fd90f81c9e02db">   19</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="struct_card_const_info.html#ad0dadc2203ad21a559fd90f81c9e02db">apWithFlags</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_card_const_info.html#a26915a080456e846d932b2b6542d2148">   27</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="struct_card_const_info.html#a26915a080456e846d932b2b6542d2148">dpWithFlags</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> password[8];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_effect.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_effect.html">Effect</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> type;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> data;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_unit.html">   37</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_unit.html">Unit</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="struct_card_const_info.html">CardConstInfo</a>* constInfo;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">char</span> unk_0x4[4];</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="union_card_effects.html">CardEffects</a> cardEffects;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">char</span> unk_0x30[8];</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">short</span> apBoost;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">short</span> dpBoost;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> cardNo;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e">   46</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e">kind</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_unit.html#a018ce862a141bc6898023e169a9bfcdc">   48</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a018ce862a141bc6898023e169a9bfcdc">attr</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_unit.html#a4878a796624c66a4bb9183a52b8bc703">   50</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a4878a796624c66a4bb9183a52b8bc703">locCol</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b">   52</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b">locRow</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span> unk_0x42[2];</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235">   55</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235">side</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_unit.html#aa64a179e0c9e0844284b14e396bc6018">   57</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#aa64a179e0c9e0844284b14e396bc6018">slot</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span> unk_0x46;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> summonOrder;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> lvRev;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> curseRest;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> spellRest;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> delayCount;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">char</span> unk_0x4C[4];</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ctlGoalC;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ctlGoalM;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">char</span> unk_0x52;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ctlRateM;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> openRate;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">char</span> unk_0x55[2];</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60">   75</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60">status</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">char</span> unk_0x58[4];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="struct_map_info.html">   80</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_map_info.html">MapInfo</a> {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="struct_unit.html">Unit</a>* unit;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">char</span> unk_0x04[16];</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> fieldRate;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="struct_map_info.html#a2866182616ba91c8e037f95b414fa06e">   85</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_map_info.html#a2866182616ba91c8e037f95b414fa06e">field</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">char</span> unk_0x17[5];</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="union_card_effects.html">   36</a></span>&#160;<span class="keyword">union </span><a class="code" href="union_card_effects.html">CardEffects</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="struct_effect.html">Effect</a> effects[5];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> leaderAbilities[20];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_model.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_model.html">Model</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">char</span> unk_0x0[499];</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_model.html#a284ead502c6524f8c0b22ee7434a8505">   45</a></span>&#160;    <span class="keywordtype">signed</span> <span class="keywordtype">char</span> <a class="code" href="struct_model.html#a284ead502c6524f8c0b22ee7434a8505">type</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">char</span> unk_0x1F4[27];</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_unit.html">   50</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_unit.html">Unit</a> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_unit.html#a375a63f745d230a14d86c7183782b3c4">   52</a></span>&#160;    <a class="code" href="struct_card_const_info.html">CardConstInfo</a>* <a class="code" href="struct_unit.html#a375a63f745d230a14d86c7183782b3c4">constInfo</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span> unk_0x4[4];</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="union_card_effects.html">CardEffects</a> cardEffects;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">char</span> unk_0x30[8];</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_unit.html#a10a5489b41d90ae8aa14d32fca99c5a9">   58</a></span>&#160;    <span class="keywordtype">short</span> <a class="code" href="struct_unit.html#a10a5489b41d90ae8aa14d32fca99c5a9">apBoost</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct_unit.html#ac2af6f87929b40f5007dfd82f15c5b4d">   61</a></span>&#160;    <span class="keywordtype">short</span> <a class="code" href="struct_unit.html#ac2af6f87929b40f5007dfd82f15c5b4d">dpBoost</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_unit.html#a4b9d9950515188613f724f61cf0b51a0">   63</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="struct_unit.html#a4b9d9950515188613f724f61cf0b51a0">cardNo</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e">   65</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e">kind</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_unit.html#a018ce862a141bc6898023e169a9bfcdc">   67</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a018ce862a141bc6898023e169a9bfcdc">attr</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_unit.html#a4878a796624c66a4bb9183a52b8bc703">   69</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a4878a796624c66a4bb9183a52b8bc703">locCol</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b">   71</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b">locRow</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">char</span> unk_0x42[2];</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235">   74</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235">side</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_unit.html#aa64a179e0c9e0844284b14e396bc6018">   76</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#aa64a179e0c9e0844284b14e396bc6018">slot</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">char</span> unk_0x46;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> summonOrder;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> lvRev;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> curseRest;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> spellRest;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> delayCount;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">char</span> unk_0x4C[4];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ctlGoalC;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ctlGoalM;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">char</span> unk_0x52;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> ctlRateM;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> openRate;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">char</span> unk_0x55[2];</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60">   94</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60">status</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">char</span> unk_0x58[4];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="struct_map_info.html">   99</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_map_info.html">MapInfo</a> {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="struct_unit.html">Unit</a>* unit;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">char</span> unk_0x04[16];</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> fieldRate;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="struct_map_info.html#a2866182616ba91c8e037f95b414fa06e">  104</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_map_info.html#a2866182616ba91c8e037f95b414fa06e">field</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">char</span> unk_0x17[5];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astruct_model_html_a284ead502c6524f8c0b22ee7434a8505"><div class="ttname"><a href="struct_model.html#a284ead502c6524f8c0b22ee7434a8505">Model::type</a></div><div class="ttdeci">signed char type</div><div class="ttdef"><b>Definition:</b> structs.h:32</div></div>
-<div class="ttc" id="astruct_effect_html"><div class="ttname"><a href="struct_effect.html">Effect</a></div><div class="ttdef"><b>Definition:</b> structs.h:18</div></div>
-<div class="ttc" id="astruct_model_html"><div class="ttname"><a href="struct_model.html">Model</a></div><div class="ttdef"><b>Definition:</b> structs.h:29</div></div>
-<div class="ttc" id="astruct_unit_html_af6e46d85efe688aad0c7cc6f5666997b"><div class="ttname"><a href="struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b">Unit::locRow</a></div><div class="ttdeci">unsigned char locRow</div><div class="ttdef"><b>Definition:</b> structs.h:52</div></div>
-<div class="ttc" id="astruct_unit_html"><div class="ttname"><a href="struct_unit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> structs.h:37</div></div>
-<div class="ttc" id="astruct_unit_html_a4878a796624c66a4bb9183a52b8bc703"><div class="ttname"><a href="struct_unit.html#a4878a796624c66a4bb9183a52b8bc703">Unit::locCol</a></div><div class="ttdeci">unsigned char locCol</div><div class="ttdef"><b>Definition:</b> structs.h:50</div></div>
-<div class="ttc" id="astruct_map_info_html_a2866182616ba91c8e037f95b414fa06e"><div class="ttname"><a href="struct_map_info.html#a2866182616ba91c8e037f95b414fa06e">MapInfo::field</a></div><div class="ttdeci">unsigned char field</div><div class="ttdef"><b>Definition:</b> structs.h:85</div></div>
-<div class="ttc" id="astruct_unit_html_a0bc4b677f711f0d7f20b9716fab28c60"><div class="ttname"><a href="struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60">Unit::status</a></div><div class="ttdeci">unsigned char status</div><div class="ttdef"><b>Definition:</b> structs.h:75</div></div>
-<div class="ttc" id="astruct_map_info_html"><div class="ttname"><a href="struct_map_info.html">MapInfo</a></div><div class="ttdef"><b>Definition:</b> structs.h:80</div></div>
-<div class="ttc" id="astruct_unit_html_aa64a179e0c9e0844284b14e396bc6018"><div class="ttname"><a href="struct_unit.html#aa64a179e0c9e0844284b14e396bc6018">Unit::slot</a></div><div class="ttdeci">unsigned char slot</div><div class="ttdef"><b>Definition:</b> structs.h:57</div></div>
-<div class="ttc" id="aunion_card_effects_html"><div class="ttname"><a href="union_card_effects.html">CardEffects</a></div><div class="ttdef"><b>Definition:</b> structs.h:23</div></div>
-<div class="ttc" id="astruct_unit_html_aae0e8cc25dce81dd2be24b1095f8cb3e"><div class="ttname"><a href="struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e">Unit::kind</a></div><div class="ttdeci">unsigned char kind</div><div class="ttdef"><b>Definition:</b> structs.h:46</div></div>
-<div class="ttc" id="astruct_unit_html_a1c0c832c99a4639b0f3d6e32c7715235"><div class="ttname"><a href="struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235">Unit::side</a></div><div class="ttdeci">unsigned char side</div><div class="ttdef"><b>Definition:</b> structs.h:55</div></div>
+<div class="ttc" id="astruct_unit_html_a375a63f745d230a14d86c7183782b3c4"><div class="ttname"><a href="struct_unit.html#a375a63f745d230a14d86c7183782b3c4">Unit::constInfo</a></div><div class="ttdeci">CardConstInfo * constInfo</div><div class="ttdef"><b>Definition:</b> structs.h:52</div></div>
+<div class="ttc" id="astruct_model_html_a284ead502c6524f8c0b22ee7434a8505"><div class="ttname"><a href="struct_model.html#a284ead502c6524f8c0b22ee7434a8505">Model::type</a></div><div class="ttdeci">signed char type</div><div class="ttdef"><b>Definition:</b> structs.h:45</div></div>
+<div class="ttc" id="astruct_effect_html"><div class="ttname"><a href="struct_effect.html">Effect</a></div><div class="ttdef"><b>Definition:</b> structs.h:31</div></div>
+<div class="ttc" id="astruct_model_html"><div class="ttname"><a href="struct_model.html">Model</a></div><div class="ttdef"><b>Definition:</b> structs.h:42</div></div>
+<div class="ttc" id="astruct_unit_html_af6e46d85efe688aad0c7cc6f5666997b"><div class="ttname"><a href="struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b">Unit::locRow</a></div><div class="ttdeci">unsigned char locRow</div><div class="ttdef"><b>Definition:</b> structs.h:71</div></div>
+<div class="ttc" id="astruct_unit_html"><div class="ttname"><a href="struct_unit.html">Unit</a></div><div class="ttdef"><b>Definition:</b> structs.h:50</div></div>
+<div class="ttc" id="astruct_unit_html_a4878a796624c66a4bb9183a52b8bc703"><div class="ttname"><a href="struct_unit.html#a4878a796624c66a4bb9183a52b8bc703">Unit::locCol</a></div><div class="ttdeci">unsigned char locCol</div><div class="ttdef"><b>Definition:</b> structs.h:69</div></div>
+<div class="ttc" id="astruct_unit_html_a10a5489b41d90ae8aa14d32fca99c5a9"><div class="ttname"><a href="struct_unit.html#a10a5489b41d90ae8aa14d32fca99c5a9">Unit::apBoost</a></div><div class="ttdeci">short apBoost</div><div class="ttdef"><b>Definition:</b> structs.h:58</div></div>
+<div class="ttc" id="astruct_map_info_html_a2866182616ba91c8e037f95b414fa06e"><div class="ttname"><a href="struct_map_info.html#a2866182616ba91c8e037f95b414fa06e">MapInfo::field</a></div><div class="ttdeci">unsigned char field</div><div class="ttdef"><b>Definition:</b> structs.h:104</div></div>
+<div class="ttc" id="astruct_unit_html_a0bc4b677f711f0d7f20b9716fab28c60"><div class="ttname"><a href="struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60">Unit::status</a></div><div class="ttdeci">unsigned char status</div><div class="ttdef"><b>Definition:</b> structs.h:94</div></div>
+<div class="ttc" id="astruct_card_const_info_html_a26915a080456e846d932b2b6542d2148"><div class="ttname"><a href="struct_card_const_info.html#a26915a080456e846d932b2b6542d2148">CardConstInfo::dpWithFlags</a></div><div class="ttdeci">unsigned short dpWithFlags</div><div class="ttdef"><b>Definition:</b> structs.h:27</div></div>
+<div class="ttc" id="astruct_map_info_html"><div class="ttname"><a href="struct_map_info.html">MapInfo</a></div><div class="ttdef"><b>Definition:</b> structs.h:99</div></div>
+<div class="ttc" id="astruct_unit_html_aa64a179e0c9e0844284b14e396bc6018"><div class="ttname"><a href="struct_unit.html#aa64a179e0c9e0844284b14e396bc6018">Unit::slot</a></div><div class="ttdeci">unsigned char slot</div><div class="ttdef"><b>Definition:</b> structs.h:76</div></div>
+<div class="ttc" id="aunion_card_effects_html"><div class="ttname"><a href="union_card_effects.html">CardEffects</a></div><div class="ttdef"><b>Definition:</b> structs.h:36</div></div>
+<div class="ttc" id="astruct_unit_html_a4b9d9950515188613f724f61cf0b51a0"><div class="ttname"><a href="struct_unit.html#a4b9d9950515188613f724f61cf0b51a0">Unit::cardNo</a></div><div class="ttdeci">unsigned short cardNo</div><div class="ttdef"><b>Definition:</b> structs.h:63</div></div>
+<div class="ttc" id="astruct_unit_html_aae0e8cc25dce81dd2be24b1095f8cb3e"><div class="ttname"><a href="struct_unit.html#aae0e8cc25dce81dd2be24b1095f8cb3e">Unit::kind</a></div><div class="ttdeci">unsigned char kind</div><div class="ttdef"><b>Definition:</b> structs.h:65</div></div>
+<div class="ttc" id="astruct_unit_html_a1c0c832c99a4639b0f3d6e32c7715235"><div class="ttname"><a href="struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235">Unit::side</a></div><div class="ttdeci">unsigned char side</div><div class="ttdef"><b>Definition:</b> structs.h:74</div></div>
 <div class="ttc" id="astruct_card_const_info_html"><div class="ttname"><a href="struct_card_const_info.html">CardConstInfo</a></div><div class="ttdef"><b>Definition:</b> structs.h:6</div></div>
-<div class="ttc" id="astruct_unit_html_a018ce862a141bc6898023e169a9bfcdc"><div class="ttname"><a href="struct_unit.html#a018ce862a141bc6898023e169a9bfcdc">Unit::attr</a></div><div class="ttdeci">unsigned char attr</div><div class="ttdef"><b>Definition:</b> structs.h:48</div></div>
+<div class="ttc" id="astruct_unit_html_ac2af6f87929b40f5007dfd82f15c5b4d"><div class="ttname"><a href="struct_unit.html#ac2af6f87929b40f5007dfd82f15c5b4d">Unit::dpBoost</a></div><div class="ttdeci">short dpBoost</div><div class="ttdef"><b>Definition:</b> structs.h:61</div></div>
+<div class="ttc" id="astruct_card_const_info_html_ad0dadc2203ad21a559fd90f81c9e02db"><div class="ttname"><a href="struct_card_const_info.html#ad0dadc2203ad21a559fd90f81c9e02db">CardConstInfo::apWithFlags</a></div><div class="ttdeci">unsigned short apWithFlags</div><div class="ttdef"><b>Definition:</b> structs.h:19</div></div>
+<div class="ttc" id="astruct_unit_html_a018ce862a141bc6898023e169a9bfcdc"><div class="ttname"><a href="struct_unit.html#a018ce862a141bc6898023e169a9bfcdc">Unit::attr</a></div><div class="ttdeci">unsigned char attr</div><div class="ttdef"><b>Definition:</b> structs.h:67</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
