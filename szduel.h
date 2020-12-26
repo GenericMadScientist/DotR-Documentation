@@ -27,8 +27,8 @@ extern MapInfo mapInfo[7][7];
  *  If side is negative, pos is instead interpreted as an index into models and
  *  the type is retrieved with SzModel_GetModelType. The returned type is then
  *  converted into a standard side/pos combination as follows:
- *  - If the type is 4, side is Lancastrians if pos is <= 24 and Yorkists if pos
- *  > 24, and pos becomes old pos % 5 + 1
+ *  - If the type is 4, side is Lancastrians if pos is <= 24 and Yorkists if
+ *  pos > 24, and pos becomes old pos % 5 + 1
  *  - If the type is 5, side is pos - 30 and pos becomes 0
  *  - Any other type results in this function returning NULL.
  *

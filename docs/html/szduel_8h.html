@@ -152,10 +152,7 @@ Variables</h2></td></tr>
 
 <p>Gets the unit given by a side and position. </p>
 <p>If side is negative, pos is instead interpreted as an index into models and the type is retrieved with SzModel_GetModelType. The returned type is then converted into a standard side/pos combination as follows:</p><ul>
-<li>If the type is 4, side is Lancastrians if pos is &lt;= 24 and Yorkists if pos <blockquote class="doxtable">
-<p>24, and pos becomes old pos % 5 + 1 </p>
-</blockquote>
-</li>
+<li>If the type is 4, side is Lancastrians if pos is &lt;= 24 and Yorkists if pos &gt; 24, and pos becomes old pos % 5 + 1</li>
 <li>If the type is 5, side is pos - 30 and pos becomes 0</li>
 <li>Any other type results in this function returning NULL.</li>
 </ul>
