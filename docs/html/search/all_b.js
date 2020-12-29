@@ -1,27 +1,5 @@
 var searchData=
 [
-  ['seed_28',['seed',['../stdlib_8h.html#a2602eb5b295232e15de248591444989f',1,'stdlib.h']]],
-  ['side_29',['side',['../struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235',1,'Unit']]],
-  ['sidecomp_30',['SideComp',['../enums_8h.html#ae23a3b51604d31fc700116c4789f1365',1,'enums.h']]],
-  ['slot_31',['slot',['../struct_unit.html#aa64a179e0c9e0844284b14e396bc6018',1,'Unit']]],
-  ['status_32',['status',['../struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60',1,'Unit']]],
-  ['stdlib_2eh_33',['stdlib.h',['../stdlib_8h.html',1,'']]],
-  ['structs_2eh_34',['structs.h',['../structs_8h.html',1,'']]],
-  ['summonorder_35',['summonOrder',['../struct_unit.html#abe1f5ff52767fd7ad803ed79b435824c',1,'Unit']]],
-  ['szduel_2eh_36',['szduel.h',['../szduel_8h.html',1,'']]],
-  ['szduel_5fgetcardinfo_37',['SzDuel_GetCardInfo',['../szduel_8h.html#a633b5e50e910ac5501c1b6be2fadb831',1,'szduel.h']]],
-  ['szduel_5fgetfield_38',['SzDuel_GetField',['../szduel_8h.html#a7efa461b2559c1ceb3beff9ff6fc0610',1,'szduel.h']]],
-  ['szduel_5fgetunit_39',['SzDuel_GetUnit',['../szduel_8h.html#a23e29496f8be223f943f76eab903b0f7',1,'szduel.h']]],
-  ['szduel_5fgetunitap_40',['SzDuel_GetUnitAP',['../szduel_8h.html#a23a6cd1b15fc853f93e4c25347e5e286',1,'szduel.h']]],
-  ['szduel_5fgetunitap2_41',['SzDuel_GetUnitAP2',['../szduel_8h.html#a6c5c057c7254da41b01d2ed2f27bed1a',1,'szduel.h']]],
-  ['szduel_5fgetunitattr_42',['SzDuel_GetUnitAttr',['../szduel_8h.html#a0533813745caca38dc1b9a8d6e31f139',1,'szduel.h']]],
-  ['szduel_5fgetunitcardno_43',['SzDuel_GetUnitCardNo',['../szduel_8h.html#aa2e376a7e835cfcecaf32173dffdd16f',1,'szduel.h']]],
-  ['szduel_5fgetunitdp_44',['SzDuel_GetUnitDP',['../szduel_8h.html#a48025ebd086822205ff5dd831984a88c',1,'szduel.h']]],
-  ['szduel_5fgetunitdp2_45',['SzDuel_GetUnitDP2',['../szduel_8h.html#a192f0248884e1925d398ab0c72330349',1,'szduel.h']]],
-  ['szduel_5fgetunitkind_46',['SzDuel_GetUnitKind',['../szduel_8h.html#ac9173487b0780206b768bae53d3b61db',1,'szduel.h']]],
-  ['szduel_5fgetunitloc_47',['SzDuel_GetUnitLoc',['../szduel_8h.html#a19af2b37525fed25189a38c96bd18744',1,'szduel.h']]],
-  ['szduel_5fgetunitstatus_48',['SzDuel_GetUnitStatus',['../szduel_8h.html#a2bb5bb462a7b96a9c9012e5f1531d370',1,'szduel.h']]],
-  ['szduel_5fgetunitsummonorder_49',['SzDuel_GetUnitSummonOrder',['../szduel_8h.html#a60078c8bad864463f2eca62a3ff0941a',1,'szduel.h']]],
-  ['szmodel_2eh_50',['szmodel.h',['../szmodel_8h.html',1,'']]],
-  ['szmodel_5fgetmodeltype_51',['SzModel_GetModelType',['../szmodel_8h.html#a3daac95140b7eb985d7f680b4ea39171',1,'szmodel.h']]]
+  ['ram_20map_31',['RAM Map',['../md_ram-map.html',1,'']]],
+  ['rand_32',['rand',['../stdlib_8h.html#ae23144bcbb8e3742b00eb687c36654d1',1,'stdlib.h']]]
 ];

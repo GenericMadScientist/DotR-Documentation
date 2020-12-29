@@ -101,6 +101,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a192f0248884e1925d398ab0c72330349"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a192f0248884e1925d398ab0c72330349">SzDuel_GetUnitDP2</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, bool ignoreBoosts)</td></tr>
 <tr class="memdesc:a192f0248884e1925d398ab0c72330349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the defense of unit, which may or may not include boosts.  <a href="szduel_8h.html#a192f0248884e1925d398ab0c72330349">More...</a><br /></td></tr>
 <tr class="separator:a192f0248884e1925d398ab0c72330349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb42bb4d5a12af526ce19744fab4059c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#adb42bb4d5a12af526ce19744fab4059c">SzDuel_GetUnitEffect</a> (int side, int pos, int effInd)</td></tr>
+<tr class="memdesc:adb42bb4d5a12af526ce19744fab4059c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an effect of the unit specified by a side and position.  <a href="szduel_8h.html#adb42bb4d5a12af526ce19744fab4059c">More...</a><br /></td></tr>
+<tr class="separator:adb42bb4d5a12af526ce19744fab4059c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9173487b0780206b768bae53d3b61db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#ac9173487b0780206b768bae53d3b61db">SzDuel_GetUnitKind</a> (int side, int pos)</td></tr>
 <tr class="memdesc:ac9173487b0780206b768bae53d3b61db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the kind of the unit specified by a side and position.  <a href="szduel_8h.html#ac9173487b0780206b768bae53d3b61db">More...</a><br /></td></tr>
 <tr class="separator:ac9173487b0780206b768bae53d3b61db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:acf1c964e87a6439527698377ace94661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#acf1c964e87a6439527698377ace94661">monsterEffects</a> [256][5]</td></tr>
+<tr class="memdesc:acf1c964e87a6439527698377ace94661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2C9DF0.  <a href="szduel_8h.html#acf1c964e87a6439527698377ace94661">More...</a><br /></td></tr>
+<tr class="separator:acf1c964e87a6439527698377ace94661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf2457a4c19954c85f807c602f1ad516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#acf2457a4c19954c85f807c602f1ad516">magicEffects</a> [171]</td></tr>
+<tr class="memdesc:acf2457a4c19954c85f807c602f1ad516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2CC5F0.  <a href="szduel_8h.html#acf2457a4c19954c85f807c602f1ad516">More...</a><br /></td></tr>
+<tr class="separator:acf2457a4c19954c85f807c602f1ad516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b24d0ad4cb678df0833baa98964e3ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_unit.html">Unit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a7b24d0ad4cb678df0833baa98964e3ca">units</a> [3][11]</td></tr>
 <tr class="memdesc:a7b24d0ad4cb678df0833baa98964e3ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 318280.  <a href="szduel_8h.html#a7b24d0ad4cb678df0833baa98964e3ca">More...</a><br /></td></tr>
 <tr class="separator:a7b24d0ad4cb678df0833baa98964e3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -494,6 +503,52 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="adb42bb4d5a12af526ce19744fab4059c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb42bb4d5a12af526ce19744fab4059c">&#9670;&nbsp;</a></span>SzDuel_GetUnitEffect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_effect.html">Effect</a>* SzDuel_GetUnitEffect </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>effInd</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return an effect of the unit specified by a side and position. </p>
+<p>If the unit is invalid or if effInd does not lie between 0 and 4 inclusive then NULL is returned. Otherwise cardEffects is interpreted as an array of 5 Effects and a pointer to the effInd'th element is returned. effInd corresponds to the following types of effect: 0 - Attack 1 - Movement 2 - Nature <a class="el" href="struct_effect.html">Effect</a> 3 - Flip 4 - Destruction</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+    <tr><td class="paramname">effInd</td><td>The index of the effect type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding effect of the unit </dd></dl>
+
+</div>
+</div>
 <a id="ac9173487b0780206b768bae53d3b61db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9173487b0780206b768bae53d3b61db">&#9670;&nbsp;</a></span>SzDuel_GetUnitKind()</h2>
 
@@ -658,6 +713,31 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="acf2457a4c19954c85f807c602f1ad516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf2457a4c19954c85f807c602f1ad516">&#9670;&nbsp;</a></span>magicEffects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_effect.html">Effect</a> magicEffects[171]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Address 2CC5F0. </p>
+<p>Array of effects for every non-monster in the game. </p>
+
+</div>
+</div>
 <a id="a6efa6cd7ac6a97eb9d0412a07c2e7b79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6efa6cd7ac6a97eb9d0412a07c2e7b79">&#9670;&nbsp;</a></span>mapInfo</h2>
 
@@ -680,6 +760,31 @@ Variables</h2></td></tr>
 
 <p>Address 318E60. </p>
 <p>Array of <a class="el" href="struct_map_info.html">MapInfo</a> for every square on the 7 x 7 board. The indices are given by row and column, so the square at a particular row and column is mapInfo[row][col]. </p>
+
+</div>
+</div>
+<a id="acf1c964e87a6439527698377ace94661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf1c964e87a6439527698377ace94661">&#9670;&nbsp;</a></span>monsterEffects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_effect.html">Effect</a> monsterEffects[256][5]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Address 2C9DF0. </p>
+<p>Array of effects for every effect monster in the game. The order of the effects are: 0 - Attack 1 - Movement 2 - Nature <a class="el" href="struct_effect.html">Effect</a> 3 - Flip 4 - Destruction </p>
 
 </div>
 </div>

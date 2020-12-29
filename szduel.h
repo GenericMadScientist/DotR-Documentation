@@ -5,6 +5,24 @@
 
 #include "structs.h"
 
+/** @brief Address 2C9DF0
+ *
+ *  Array of effects for every effect monster in the game. The order of the
+ *  effects are:
+ *  0 - Attack
+ *  1 - Movement
+ *  2 - Nature Effect
+ *  3 - Flip
+ *  4 - Destruction
+ */
+extern Effect monsterEffects[256][5];
+
+/** @brief Address 2CC5F0
+ *
+ *  Array of effects for every non-monster in the game.
+ */
+extern Effect magicEffects[171];
+
 /** @brief Address 318280
  *
  *  Three arrays of units. The first array of 11 represents the Lancastrian
@@ -158,6 +176,27 @@ int SzDuel_GetUnitDP(int side, int pos, bool ignoreBoosts);
  *  @return Thedefense of the unit
  */
 int SzDuel_GetUnitDP2(Unit* unit, bool ignoreBoosts);
+
+/** @brief Return an effect of the unit specified by a side and position.
+ *
+ *  If the unit is invalid or if effInd does not lie between 0 and 4 inclusive
+ *  then NULL is returned. Otherwise cardEffects is interpreted as an array of
+ *  5 Effects and a pointer to the effInd'th element is returned. effInd
+ *  corresponds to the following types of effect:
+ *  0 - Attack
+ *  1 - Movement
+ *  2 - Nature Effect
+ *  3 - Flip
+ *  4 - Destruction
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param effInd The index of the effect type
+ *  @return The corresponding effect of the unit
+ */
+Effect* SzDuel_GetUnitEffect(int side, int pos, int effInd);
 
 /** @brief Return the kind of the unit specified by a side and position.
  *

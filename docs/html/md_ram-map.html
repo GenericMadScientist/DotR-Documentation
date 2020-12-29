@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Duelists of the Roses: Effect Struct Reference</title>
+<title>Duelists of the Roses: RAM Map</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,46 +60,29 @@ $(function() {
 </div>
 
 </div><!-- top -->
-<div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Effect Struct Reference</div>  </div>
+<div class="title">RAM Map </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="structs_8h_source.html">structs.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a9ea1d4f26cc785d2c94c19ffeed01f8c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effect.html#a9ea1d4f26cc785d2c94c19ffeed01f8c">typeAndUnk</a></td></tr>
-<tr class="separator:a9ea1d4f26cc785d2c94c19ffeed01f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a48343fc3270e4d192f262179ff98a4"><td class="memItemLeft" align="right" valign="top"><a id="a7a48343fc3270e4d192f262179ff98a4"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>data</b></td></tr>
-<tr class="separator:a7a48343fc3270e4d192f262179ff98a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Address  </th><th class="markdownTableHeadNone">Data  </th><th class="markdownTableHeadNone">Size  </th><th class="markdownTableHeadNone">File   </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">28F850  </td><td class="markdownTableBodyNone">unsigned long long seed  </td><td class="markdownTableBodyNone">8  </td><td class="markdownTableBodyNone"><a class="el" href="stdlib_8h.html">stdlib.h</a>   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">2C9DF0  </td><td class="markdownTableBodyNone"><a class="el" href="struct_effect.html">Effect</a> monsterEffects[256][5]  </td><td class="markdownTableBodyNone">10240  </td><td class="markdownTableBodyNone"><a class="el" href="szduel_8h.html">szduel.h</a>   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">2CC5F0  </td><td class="markdownTableBodyNone"><a class="el" href="struct_effect.html">Effect</a> magicEffects[171]  </td><td class="markdownTableBodyNone">1368  </td><td class="markdownTableBodyNone"><a class="el" href="szduel_8h.html">szduel.h</a>   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">318280  </td><td class="markdownTableBodyNone"><a class="el" href="struct_unit.html">Unit</a> units[3][11]  </td><td class="markdownTableBodyNone">3036  </td><td class="markdownTableBodyNone"><a class="el" href="szduel_8h.html">szduel.h</a>   </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">318E60  </td><td class="markdownTableBodyNone"><a class="el" href="struct_map_info.html">MapInfo</a> mapInfo[7][7]  </td><td class="markdownTableBodyNone">1372  </td><td class="markdownTableBodyNone"><a class="el" href="szduel_8h.html">szduel.h</a>   </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">31ABB0  </td><td class="markdownTableBodyNone"><a class="el" href="struct_model.html">Model</a> *models[84]  </td><td class="markdownTableBodyNone">336  </td><td class="markdownTableBodyNone"><a class="el" href="szmodel_8h.html">szmodel.h</a>   </td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This struct represents a monster or magic effect. See Monster Effects and Magic Effects for a list of effects in the game. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="a9ea1d4f26cc785d2c94c19ffeed01f8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ea1d4f26cc785d2c94c19ffeed01f8c">&#9670;&nbsp;</a></span>typeAndUnk</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int Effect::typeAndUnk</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The top three bytes is the ID for the effect type. The bottom byte has unknown meaning. </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="structs_8h_source.html">structs.h</a></li>
-</ul>
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20

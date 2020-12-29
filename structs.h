@@ -28,11 +28,17 @@ struct CardConstInfo {
     unsigned char password[8];
 };
 
+/*! This struct represents a monster or magic effect. See Monster Effects and
+ *  Magic Effects for a list of effects in the game. */
 struct Effect {
-    unsigned int type;
+    /*! The top three bytes is the ID for the effect type. The bottom byte has
+     *  unknown meaning. */
+    unsigned int typeAndUnk;
     unsigned int data;
 };
 
+/*! This union represents the effects of a unit. effects is for a card's normal
+ *  effects, leaderAbilities are used for leaders. */
 union CardEffects {
     Effect effects[5];
     unsigned short leaderAbilities[20];
@@ -40,7 +46,11 @@ union CardEffects {
 
 /*! This struct comes up in SzModel_GetModelType. */
 struct Model {
-    char unk_0x0[499];
+    char unk_0x0[408];
+    float unk_0x198;
+    char unk_0x19C[68];
+    char unk_0x1E0;
+    char unk_0x1E1[18];
     /*! The model type returned by SzModel_GetModelType. */
     signed char type;
     char unk_0x1F4[27];
@@ -50,9 +60,14 @@ struct Model {
 struct Unit {
     /*! The CardConstInfo referring to the original data for a card. */
     CardConstInfo* constInfo;
-    char unk_0x4[4];
+    void* unk_0x4;
+    /*! The effects of unit. This is Effect[5] if the unit is a card, or
+     *  unsigned short[20] if the unit is a deck leader. Note these effects can
+     *  be changed by cards like Sword of Dragon's Soul and Crush Card. */
     CardEffects cardEffects;
-    char unk_0x30[8];
+    int unk_0x30;
+    short unk_0x34;
+    short unk_0x36;
     /*! The total boosts and debuffs being applied to the card's attack. Does
      *  not include terrain or leader effects, or Shapesnatch's effect. */
     short apBoost;
@@ -69,12 +84,13 @@ struct Unit {
     unsigned char locCol;
     /*! The row the unit is on, from 0 to 6 inclusive. */
     unsigned char locRow;
-    char unk_0x42[2];
+    char unk_0x42;
+    char unk_0x43;
     /*! The side that normally controls the unit. */
     unsigned char side;
     /*! SzDuel_GetUnit checks if this is greater than 10. */
     unsigned char slot;
-    char unk_0x46;
+    unsigned char modelId;
     /*! Starts at 0 for the first summoned card, 1 for the next, etc. */
     unsigned char summonOrder;
     unsigned char lvRev;
@@ -87,7 +103,8 @@ struct Unit {
     char unk_0x52;
     unsigned char ctlRateM;
     unsigned char openRate;
-    char unk_0x55[2];
+    char unk_0x55;
+    char unk_0x56;
     /*! A series of flags.
      *  status & 0b000001 is set if the unit has moved.
      *  status & 0b000010 is set when the unit is under opposition control, due
@@ -99,7 +116,8 @@ struct Unit {
      *  status & 0b100000 is set if the card is actually in defense position.
      */
     unsigned char status;
-    char unk_0x58[4];
+    short unk_0x58;
+    char unk_0x5A[2];
 };
 
 /*! The main struct that represents a square on the field. */
