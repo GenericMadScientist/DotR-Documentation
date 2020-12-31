@@ -107,6 +107,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ac9173487b0780206b768bae53d3b61db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#ac9173487b0780206b768bae53d3b61db">SzDuel_GetUnitKind</a> (int side, int pos)</td></tr>
 <tr class="memdesc:ac9173487b0780206b768bae53d3b61db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the kind of the unit specified by a side and position.  <a href="szduel_8h.html#ac9173487b0780206b768bae53d3b61db">More...</a><br /></td></tr>
 <tr class="separator:ac9173487b0780206b768bae53d3b61db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6518f705a7b4392edbdbcc66f9123ec3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a6518f705a7b4392edbdbcc66f9123ec3">SzDuel_GetUnitLeaderAbility</a> (int side, int pos, <a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> ability, int *extraDataOut)</td></tr>
+<tr class="memdesc:a6518f705a7b4392edbdbcc66f9123ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if a specified leader ability is present on unit.  <a href="szduel_8h.html#a6518f705a7b4392edbdbcc66f9123ec3">More...</a><br /></td></tr>
+<tr class="separator:a6518f705a7b4392edbdbcc66f9123ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dbeff515aad3b9a7fa5ff00068ed99"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a04dbeff515aad3b9a7fa5ff00068ed99">SzDuel_GetUnitLeaderAbility2</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, <a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> ability, int *extraDataOut)</td></tr>
+<tr class="memdesc:a04dbeff515aad3b9a7fa5ff00068ed99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if a specified leader ability is present on unit.  <a href="szduel_8h.html#a04dbeff515aad3b9a7fa5ff00068ed99">More...</a><br /></td></tr>
+<tr class="separator:a04dbeff515aad3b9a7fa5ff00068ed99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1526876050351c9dbccd56d0bc28d18d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a1526876050351c9dbccd56d0bc28d18d">SzDuel_GetUnitLeaderAbility3</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, <a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> ability, int *extraDataOut, bool ignoreMenu)</td></tr>
+<tr class="memdesc:a1526876050351c9dbccd56d0bc28d18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if a specified leader ability is present on unit.  <a href="szduel_8h.html#a1526876050351c9dbccd56d0bc28d18d">More...</a><br /></td></tr>
+<tr class="separator:a1526876050351c9dbccd56d0bc28d18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19af2b37525fed25189a38c96bd18744"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a19af2b37525fed25189a38c96bd18744">SzDuel_GetUnitLoc</a> (int side, int pos)</td></tr>
 <tr class="memdesc:a19af2b37525fed25189a38c96bd18744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the location of the unit specified by a side and position.  <a href="szduel_8h.html#a19af2b37525fed25189a38c96bd18744">More...</a><br /></td></tr>
 <tr class="separator:a19af2b37525fed25189a38c96bd18744"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +128,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:a082e99f03c26bb3259814b0301090a29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a082e99f03c26bb3259814b0301090a29">leaderAbilities</a> [683]</td></tr>
+<tr class="memdesc:a082e99f03c26bb3259814b0301090a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2C3338.  <a href="szduel_8h.html#a082e99f03c26bb3259814b0301090a29">More...</a><br /></td></tr>
+<tr class="separator:a082e99f03c26bb3259814b0301090a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf1c964e87a6439527698377ace94661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#acf1c964e87a6439527698377ace94661">monsterEffects</a> [256][5]</td></tr>
 <tr class="memdesc:acf1c964e87a6439527698377ace94661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2C9DF0.  <a href="szduel_8h.html#acf1c964e87a6439527698377ace94661">More...</a><br /></td></tr>
 <tr class="separator:acf1c964e87a6439527698377ace94661"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -536,7 +548,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return an effect of the unit specified by a side and position. </p>
-<p>If the unit is invalid or if effInd does not lie between 0 and 4 inclusive then NULL is returned. Otherwise cardEffects is interpreted as an array of 5 Effects and a pointer to the effInd'th element is returned. effInd corresponds to the following types of effect: 0 - Attack 1 - Movement 2 - Nature <a class="el" href="struct_effect.html">Effect</a> 3 - Flip 4 - Destruction</p>
+<p>If the unit is invalid or if effInd does not lie between 0 and 4 inclusive then NULL is returned. Otherwise cardEffects is interpreted as an array of 5 Effects and a pointer to the effInd'th element is returned. effInd corresponds to the following types of effect:</p>
+<p>0 - Attack</p>
+<p>1 - Movement</p>
+<p>2 - Nature <a class="el" href="struct_effect.html">Effect</a></p>
+<p>3 - Flip</p>
+<p>4 - Destruction</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
@@ -585,6 +602,161 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The kind of the specified <a class="el" href="struct_unit.html">Unit</a> </dd></dl>
+
+</div>
+</div>
+<a id="a6518f705a7b4392edbdbcc66f9123ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6518f705a7b4392edbdbcc66f9123ec3">&#9670;&nbsp;</a></span>SzDuel_GetUnitLeaderAbility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SzDuel_GetUnitLeaderAbility </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a>&#160;</td>
+          <td class="paramname"><em>ability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>extraDataOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return if a specified leader ability is present on unit. </p>
+<p>This function converts side/pos into a <a class="el" href="struct_unit.html">Unit</a> address and forwarded into SzDuel_GetUnitLeaderAbility2. See that function for more details.</p>
+<p>If side/pos refers to an invalid unit, NULL is passed into SzDuel_GetUnitLeaderAbility2.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+    <tr><td class="paramname">ability</td><td>Type of leader ability </td></tr>
+    <tr><td class="paramname">extraDataOut</td><td>Address to write some extra data concerning the ability to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether unit has the specified ability </dd></dl>
+
+</div>
+</div>
+<a id="a04dbeff515aad3b9a7fa5ff00068ed99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04dbeff515aad3b9a7fa5ff00068ed99">&#9670;&nbsp;</a></span>SzDuel_GetUnitLeaderAbility2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SzDuel_GetUnitLeaderAbility2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a>&#160;</td>
+          <td class="paramname"><em>ability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>extraDataOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return if a specified leader ability is present on unit. </p>
+<p>This function is a wrapper around SzDuel_GetUnitLeaderAbility3 with ignoreMenu set to false. See SzDuel_GetUnitLeaderAbility3 for more information.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>Pointer to the leader unit </td></tr>
+    <tr><td class="paramname">ability</td><td>Type of leader ability </td></tr>
+    <tr><td class="paramname">extraDataOut</td><td>Address to write some extra data concerning the ability to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether unit has the specified ability </dd></dl>
+
+</div>
+</div>
+<a id="a1526876050351c9dbccd56d0bc28d18d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1526876050351c9dbccd56d0bc28d18d">&#9670;&nbsp;</a></span>SzDuel_GetUnitLeaderAbility3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SzDuel_GetUnitLeaderAbility3 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a>&#160;</td>
+          <td class="paramname"><em>ability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>extraDataOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>ignoreMenu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return if a specified leader ability is present on unit. </p>
+<p>extraDataOut is used to write extra data for the ability if the ability has extra data, or a default value of 0 if there is none. This is only done if extraDataOut is not NULL; if it is NULL then this step is skipped.</p>
+<p>If unit is NULL, unit-&gt;cardNo is above 853, or if unit-&gt;cardNo is 671 (Summoned Lord Exodia) then the function returns false. If ignoreMenu is false and the disable leader abilities option is set in custom duel, and unit has its side's leader abilities disabled, the function returns false. If ability is not a valid value for LeaderAbility, false is returned.</p>
+<p>Otherwise any extra data is written to *extraDataOut (if the pointer is not NULL). The function then returns true if the leader has the ability in question and its rank is high enough to enable it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>Pointer to the leader unit </td></tr>
+    <tr><td class="paramname">ability</td><td>Type of leader ability </td></tr>
+    <tr><td class="paramname">extraDataOut</td><td>Address to write some extra data concerning the ability to </td></tr>
+    <tr><td class="paramname">ignoreMenu</td><td>Whether to ignore the custom duel option to disable leader abilities </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether unit has the specified ability </dd></dl>
 
 </div>
 </div>
@@ -713,6 +885,32 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a082e99f03c26bb3259814b0301090a29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082e99f03c26bb3259814b0301090a29">&#9670;&nbsp;</a></span>leaderAbilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a> leaderAbilities[683]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Address 2C3338. </p>
+<p>The leader abilities for all 683 monsters.</p>
+<p>The leader abilities for a deck leader. </p>
+
+</div>
+</div>
 <a id="acf2457a4c19954c85f807c602f1ad516"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf2457a4c19954c85f807c602f1ad516">&#9670;&nbsp;</a></span>magicEffects</h2>
 

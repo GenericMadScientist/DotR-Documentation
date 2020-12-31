@@ -1,5 +1,22 @@
 var searchData=
 [
-  ['unit_75',['Unit',['../struct_unit.html',1,'']]],
-  ['units_76',['units',['../szduel_8h.html#a7b24d0ad4cb678df0833baa98964e3ca',1,'szduel.h']]]
+  ['ta_2eh_77',['ta.h',['../ta_8h.html',1,'']]],
+  ['ta_5fgetcurrentside_78',['Ta_GetCurrentSide',['../ta_8h.html#ae24483c87d12d8fd386ab3433bf3180d',1,'ta.h']]],
+  ['ta_5fgetuniteffect_79',['Ta_GetUnitEffect',['../ta_8h.html#ad78d673fe050da9f0b11855154727f1c',1,'ta.h']]],
+  ['ta_5fisldabl_80',['Ta_IsLDAbl',['../ta_8h.html#a91f15c583e10da4a8f710a5c10239e98',1,'ta.h']]],
+  ['ta_5fissquarerange_81',['Ta_IsSquareRange',['../ta_8h.html#a676a1ad6fcb123d08218a2e851d1d3e6',1,'ta.h']]],
+  ['ta_5fisunitcontrol_82',['Ta_IsUnitControl',['../ta_8h.html#a3d0cfd0a01f4e11420e806a006d0921b',1,'ta.h']]],
+  ['ta_5fisunitcontrol2_83',['Ta_IsUnitControl2',['../ta_8h.html#a52dee425c1125888131c3480da0faa11',1,'ta.h']]],
+  ['ta_5fsearchunctypenaturaleffectuser_84',['Ta_SearchUncTypeNaturalEffectUser',['../ta_8h.html#a04d01ad24105aa55d578e5a7d607e399',1,'ta.h']]],
+  ['ta_5fsearchunctypenaturaleffectusernum_85',['Ta_SearchUncTypeNaturalEffectUserNum',['../ta_8h.html#a172259661bf38a267b786edaf9dd44bb',1,'ta.h']]],
+  ['ta_5fsearchunctypenaturaleffectusernumwithside_86',['Ta_SearchUncTypeNaturalEffectUserNumWithSide',['../ta_8h.html#a8d81593268a6f1f678d02490c1e80032',1,'ta.h']]],
+  ['ta_5fsidematch_87',['Ta_SideMatch',['../ta_8h.html#a9430cc6415b757031f9c2ab571a1d23b',1,'ta.h']]],
+  ['taenc_2eh_88',['taenc.h',['../taenc_8h.html',1,'']]],
+  ['taenc_5fgetrandomelf_89',['TaEnc_GetRandomElf',['../taenc_8h.html#a97dd85c58066ae7651ead7f2e59d2c18',1,'taenc.h']]],
+  ['talogic_2eh_90',['talogic.h',['../talogic_8h.html',1,'']]],
+  ['talogic_5fgetunitctllstlen_91',['TaLogic_GetUnitCtlLstLen',['../talogic_8h.html#a6b35266231833b463ae024e57e87623a',1,'talogic.h']]],
+  ['tautil_2eh_92',['tautil.h',['../tautil_8h.html',1,'']]],
+  ['tautil_5fgetunitlst_93',['TaUtil_GetUnitLst',['../tautil_8h.html#a6f3c637093548b5bcab79f52fd70adad',1,'tautil.h']]],
+  ['type_94',['type',['../struct_model.html#a284ead502c6524f8c0b22ee7434a8505',1,'Model']]],
+  ['typeandunk_95',['typeAndUnk',['../struct_effect.html#a9ea1d4f26cc785d2c94c19ffeed01f8c',1,'Effect']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unit_82',['Unit',['../struct_unit.html',1,'']]]
+  ['leaderabilities_102',['LeaderAbilities',['../struct_leader_abilities.html',1,'']]]
 ];

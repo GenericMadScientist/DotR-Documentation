@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['seed_141',['seed',['../stdlib_8h.html#a2602eb5b295232e15de248591444989f',1,'stdlib.h']]],
-  ['side_142',['side',['../struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235',1,'Unit']]],
-  ['slot_143',['slot',['../struct_unit.html#aa64a179e0c9e0844284b14e396bc6018',1,'Unit']]],
-  ['status_144',['status',['../struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60',1,'Unit']]],
-  ['summonorder_145',['summonOrder',['../struct_unit.html#abe1f5ff52767fd7ad803ed79b435824c',1,'Unit']]]
+  ['magiceffects_174',['magicEffects',['../szduel_8h.html#acf2457a4c19954c85f807c602f1ad516',1,'szduel.h']]],
+  ['mapinfo_175',['mapInfo',['../szduel_8h.html#a6efa6cd7ac6a97eb9d0412a07c2e7b79',1,'szduel.h']]],
+  ['menunums_176',['menuNums',['../szgame_8h.html#adde85f7b6c1db5bf10ee63c13ae39436',1,'szgame.h']]],
+  ['models_177',['models',['../szmodel_8h.html#abeb152a3e7914956af5e2fd0acb75d9e',1,'szmodel.h']]],
+  ['monstereffects_178',['monsterEffects',['../szduel_8h.html#acf1c964e87a6439527698377ace94661',1,'szduel.h']]]
 ];

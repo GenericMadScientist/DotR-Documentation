@@ -80,6 +80,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad78d673fe050da9f0b11855154727f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">Ta_GetUnitEffect</a> (int side, int pos, int effInd)</td></tr>
 <tr class="memdesc:ad78d673fe050da9f0b11855154727f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an effect of the unit specified by a side and position.  <a href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">More...</a><br /></td></tr>
 <tr class="separator:ad78d673fe050da9f0b11855154727f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91f15c583e10da4a8f710a5c10239e98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a91f15c583e10da4a8f710a5c10239e98">Ta_IsLDAbl</a> (<a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> ability, int side)</td></tr>
+<tr class="memdesc:a91f15c583e10da4a8f710a5c10239e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if side's leader has the specified type of ability active.  <a href="ta_8h.html#a91f15c583e10da4a8f710a5c10239e98">More...</a><br /></td></tr>
+<tr class="separator:a91f15c583e10da4a8f710a5c10239e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676a1ad6fcb123d08218a2e851d1d3e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a676a1ad6fcb123d08218a2e851d1d3e6">Ta_IsSquareRange</a> (int srcCol, int srcRow, int col, int row, int range)</td></tr>
+<tr class="memdesc:a676a1ad6fcb123d08218a2e851d1d3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if one point is inside a specified square.  <a href="ta_8h.html#a676a1ad6fcb123d08218a2e851d1d3e6">More...</a><br /></td></tr>
+<tr class="separator:a676a1ad6fcb123d08218a2e851d1d3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d0cfd0a01f4e11420e806a006d0921b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a3d0cfd0a01f4e11420e806a006d0921b">Ta_IsUnitControl</a> (int side, int pos)</td></tr>
 <tr class="memdesc:a3d0cfd0a01f4e11420e806a006d0921b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the side controlling a unit specified by a side and position.  <a href="ta_8h.html#a3d0cfd0a01f4e11420e806a006d0921b">More...</a><br /></td></tr>
 <tr class="separator:a3d0cfd0a01f4e11420e806a006d0921b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,6 +189,105 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The corresponding effect of the unit </dd></dl>
+
+</div>
+</div>
+<a id="a91f15c583e10da4a8f710a5c10239e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f15c583e10da4a8f710a5c10239e98">&#9670;&nbsp;</a></span>Ta_IsLDAbl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_IsLDAbl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a>&#160;</td>
+          <td class="paramname"><em>ability</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets if side's leader has the specified type of ability active. </p>
+<p>This function takes into account the effect of Moisture Creature. If the opponent has Moisture Creature's Nature <a class="el" href="struct_effect.html">Effect</a> active, this function returns false. Otherwise it returns the result of SzDuel_GetUnitLeaderAbility.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ability</td><td>Type of leader ability to check for </td></tr>
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to check the leader of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the side's leader has the specified ability active </dd></dl>
+
+</div>
+</div>
+<a id="a676a1ad6fcb123d08218a2e851d1d3e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676a1ad6fcb123d08218a2e851d1d3e6">&#9670;&nbsp;</a></span>Ta_IsSquareRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_IsSquareRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>srcRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>range</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if one point is inside a specified square. </p>
+<p>The centre of the square is given by (srcCol, srcRow) and is given by the points (p_col, p_row) such that |p_row - srcRow| &lt;= range / 2 and |p_col - srcCol| &lt;= range / 2.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">srcCol</td><td>The column of the square's centre </td></tr>
+    <tr><td class="paramname">srcRow</td><td>The row of the square's centre </td></tr>
+    <tr><td class="paramname">col</td><td>The column of the point to check </td></tr>
+    <tr><td class="paramname">row</td><td>The row of the point to checl </td></tr>
+    <tr><td class="paramname">range</td><td>Roughly speaking, the length of the square's sides </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether (col, row) is inside the specified square </dd></dl>
 
 </div>
 </div>

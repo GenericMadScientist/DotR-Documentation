@@ -120,17 +120,55 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    RITUAL = 160</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">   61</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a> {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    NEVER_MATCH = 0,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    MATCH_IF_EQUAL = 1,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    MATCH_IF_NOT_EQUAL = 2,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ALWAYS_MATCH = 3</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">   61</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    EXTRA_SLOTS = 0,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    HIDDEN_CARD = 1,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    UNKNOWN_ABILITY = 2,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    DESTINY_DRAW = 3,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    INCREASED_MOVEMENT = 4,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    LP_RECOVERY = 5,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    DIRECT_DAMAGE_HALVED = 6,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    TERRAIN_CHANGE = 7,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    LEVEL_COST_REDUCTION_FOR_SUMMONING_SAME_TYPE = 8,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    EXTENDED_SUPPORT_RANGE = 9,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    INCREASED_STRENGTH_FOR_SAME_TYPE_FRENDLIES = 10,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    IMPROVED_RESISTANCE_FOR_SAME_TYPE_FRENDLIES = 11,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    MOVEMENT_BOOST_FOR_SAME_TYPE_FRENDLIES = 12,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    OPEN_OPPONENTS_CARD = 13,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    WEAKEN_SPECIFIC_ENEMY_TYPE = 14,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    SPELLBIND_SPECIFIC_ENEMY_TYPE = 15,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    DESTROY_SPECIFIC_ENEMY_TYPE = 16</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="enums_8h.html#a8a2ab0dc1116219251b433c81d499031">   82</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="enums_8h.html#a8a2ab0dc1116219251b433c81d499031">LeaderRank</a> {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    NCO = 0,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    SECOND_LT = 1,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    FIRST_LT = 2,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    CPT = 3,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    MAJ = 4,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    LTC = 5,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    COL = 6,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    BG = 7,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    RADM = 8,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    VADM = 9,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    ADM = 10,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    SADM = 11,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    SD = 12</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">   99</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a> {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    NEVER_MATCH = 0,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    MATCH_IF_EQUAL = 1,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    MATCH_IF_NOT_EQUAL = 2,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    ALWAYS_MATCH = 3</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aenums_8h_html_a8a2ab0dc1116219251b433c81d499031"><div class="ttname"><a href="enums_8h.html#a8a2ab0dc1116219251b433c81d499031">LeaderRank</a></div><div class="ttdeci">LeaderRank</div><div class="ttdef"><b>Definition:</b> enums.h:82</div></div>
 <div class="ttc" id="aenums_8h_html_a1e35064f4b70226adc63b8fe1af7ddf8"><div class="ttname"><a href="enums_8h.html#a1e35064f4b70226adc63b8fe1af7ddf8">Field</a></div><div class="ttdeci">Field</div><div class="ttdef"><b>Definition:</b> enums.h:17</div></div>
-<div class="ttc" id="aenums_8h_html_ae23a3b51604d31fc700116c4789f1365"><div class="ttname"><a href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a></div><div class="ttdeci">SideComp</div><div class="ttdef"><b>Definition:</b> enums.h:61</div></div>
+<div class="ttc" id="aenums_8h_html_ae23a3b51604d31fc700116c4789f1365"><div class="ttname"><a href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a></div><div class="ttdeci">SideComp</div><div class="ttdef"><b>Definition:</b> enums.h:99</div></div>
+<div class="ttc" id="aenums_8h_html_a2dd5a6eab5a248d50c7f05696e1f8ab1"><div class="ttname"><a href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a></div><div class="ttdeci">LeaderAbility</div><div class="ttdef"><b>Definition:</b> enums.h:61</div></div>
 <div class="ttc" id="aenums_8h_html_a15b1b83081915ae5239f81050ae0f550"><div class="ttname"><a href="enums_8h.html#a15b1b83081915ae5239f81050ae0f550">Attribute</a></div><div class="ttdeci">Attribute</div><div class="ttdef"><b>Definition:</b> enums.h:7</div></div>
 <div class="ttc" id="aenums_8h_html_aa10c9e8951b8ccf714a59ec321bdac5b"><div class="ttname"><a href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a></div><div class="ttdeci">Kind</div><div class="ttdef"><b>Definition:</b> enums.h:31</div></div>
 <!-- start footer part -->

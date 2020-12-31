@@ -57,6 +57,44 @@ enum Kind {
     RITUAL = 160
 };
 
+/*! Represents a leader ability. 2's purpose is unknown. */
+enum LeaderAbility {
+    EXTRA_SLOTS = 0,
+    HIDDEN_CARD = 1,
+    UNKNOWN_ABILITY = 2,
+    DESTINY_DRAW = 3,
+    INCREASED_MOVEMENT = 4,
+    LP_RECOVERY = 5,
+    DIRECT_DAMAGE_HALVED = 6,
+    TERRAIN_CHANGE = 7,
+    LEVEL_COST_REDUCTION_FOR_SUMMONING_SAME_TYPE = 8,
+    EXTENDED_SUPPORT_RANGE = 9,
+    INCREASED_STRENGTH_FOR_SAME_TYPE_FRENDLIES = 10,
+    IMPROVED_RESISTANCE_FOR_SAME_TYPE_FRENDLIES = 11,
+    MOVEMENT_BOOST_FOR_SAME_TYPE_FRENDLIES = 12,
+    OPEN_OPPONENTS_CARD = 13,
+    WEAKEN_SPECIFIC_ENEMY_TYPE = 14,
+    SPELLBIND_SPECIFIC_ENEMY_TYPE = 15,
+    DESTROY_SPECIFIC_ENEMY_TYPE = 16
+};
+
+/*! Represents the possible ranks a monster can have. */
+enum LeaderRank {
+    NCO = 0,
+    SECOND_LT = 1,
+    FIRST_LT = 2,
+    CPT = 3,
+    MAJ = 4,
+    LTC = 5,
+    COL = 6,
+    BG = 7,
+    RADM = 8,
+    VADM = 9,
+    ADM = 10,
+    SADM = 11,
+    SD = 12
+};
+
 /*! Represents a policy to use with matching sides. */
 enum SideComp {
     NEVER_MATCH = 0,

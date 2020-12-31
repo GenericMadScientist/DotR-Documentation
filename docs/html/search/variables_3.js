@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['field_133',['field',['../struct_map_info.html#a2866182616ba91c8e037f95b414fa06e',1,'MapInfo']]]
+  ['effects_168',['effects',['../structs_8h.html#a7332412b9f33d624d1f8d414c7993194',1,'structs.h']]]
 ];

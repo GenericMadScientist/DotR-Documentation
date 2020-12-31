@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['type_146',['type',['../struct_model.html#a284ead502c6524f8c0b22ee7434a8505',1,'Model']]],
-  ['typeandunk_147',['typeAndUnk',['../struct_effect.html#a9ea1d4f26cc785d2c94c19ffeed01f8c',1,'Effect']]]
+  ['rankwithflags_179',['rankWithFlags',['../struct_card_info.html#a77183544f6d9c55c85beb9ae26cae37e',1,'CardInfo']]],
+  ['roseflag_180',['roseFlag',['../szdata_8h.html#ac63e6e29ea6f83262d7fa0d9b2b75541',1,'szdata.h']]]
 ];

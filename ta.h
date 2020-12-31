@@ -43,6 +43,33 @@ int Ta_GetCurrentSide(int side, int pos);
  */
 Effect* Ta_GetUnitEffect(int side, int pos, int effInd);
 
+/** @brief Gets if side's leader has the specified type of ability active.
+ *
+ *  This function takes into account the effect of Moisture Creature. If the
+ *  opponent has Moisture Creature's Nature Effect active, this function returns
+ *  false. Otherwise it returns the result of SzDuel_GetUnitLeaderAbility.
+ *
+ *  @param ability Type of leader ability to check for
+ *  @param side The side (Lancastrian/Yorkist/???) to check the leader of
+ *  @return Whether the side's leader has the specified ability active
+ */
+bool Ta_IsLDAbl(LeaderAbility ability, int side);
+
+/** @brief Checks if one point is inside a specified square.
+ *
+ *  The centre of the square is given by (srcCol, srcRow) and is given by the
+ *  points (p_col, p_row) such that |p_row - srcRow| <= range / 2 and
+ *  |p_col - srcCol| <= range / 2.
+ *
+ *  @param srcCol The column of the square's centre
+ *  @param srcRow The row of the square's centre
+ *  @param col The column of the point to check
+ *  @param row The row of the point to checl
+ *  @param range Roughly speaking, the length of the square's sides
+ *  @return Whether (col, row) is inside the specified square
+ */
+bool Ta_IsSquareRange(int srcCol, int srcRow, int col, int row, int range);
+
 /** @brief Gets the side controlling a unit specified by a side and position.
  *
  *  This function is completely identical with Ta_GetCurrentSide. In fact, it's

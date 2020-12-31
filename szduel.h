@@ -5,6 +5,12 @@
 
 #include "structs.h"
 
+/** @brief Address 2C3338
+ *
+ *  The leader abilities for all 683 monsters.
+ */
+extern LeaderAbilities leaderAbilities[683];
+
 /** @brief Address 2C9DF0
  *
  *  Array of effects for every effect monster in the game. The order of the
@@ -183,10 +189,15 @@ int SzDuel_GetUnitDP2(Unit* unit, bool ignoreBoosts);
  *  then NULL is returned. Otherwise cardEffects is interpreted as an array of
  *  5 Effects and a pointer to the effInd'th element is returned. effInd
  *  corresponds to the following types of effect:
+ *
  *  0 - Attack
+ *
  *  1 - Movement
+ *
  *  2 - Nature Effect
+ *
  *  3 - Flip
+ *
  *  4 - Destruction
  *
  *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
@@ -210,6 +221,68 @@ Effect* SzDuel_GetUnitEffect(int side, int pos, int effInd);
  *  @return The kind of the specified Unit
  */
 int SzDuel_GetUnitKind(int side, int pos);
+
+/** @brief Return if a specified leader ability is present on unit.
+ *
+ *  This function converts side/pos into a Unit address and forwarded into
+ *  SzDuel_GetUnitLeaderAbility2. See that function for more details.
+ *
+ *  If side/pos refers to an invalid unit, NULL is passed into
+ *  SzDuel_GetUnitLeaderAbility2.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param ability Type of leader ability
+ *  @param extraDataOut Address to write some extra data concerning the ability
+ *  to
+ *  @return Whether unit has the specified ability
+ */
+bool SzDuel_GetUnitLeaderAbility(
+    int side, int pos, LeaderAbility ability, int* extraDataOut);
+
+/** @brief Return if a specified leader ability is present on unit.
+ *
+ *  This function is a wrapper around SzDuel_GetUnitLeaderAbility3 with
+ *  ignoreMenu set to false. See SzDuel_GetUnitLeaderAbility3 for more
+ *  information.
+ *
+ *  @param unit Pointer to the leader unit
+ *  @param ability Type of leader ability
+ *  @param extraDataOut Address to write some extra data concerning the ability
+ *  to
+ *  @return Whether unit has the specified ability
+ */
+bool SzDuel_GetUnitLeaderAbility2(
+    Unit* unit, LeaderAbility ability, int* extraDataOut);
+
+/** @brief Return if a specified leader ability is present on unit.
+ *
+ *  extraDataOut is used to write extra data for the ability if the ability has
+ *  extra data, or a default value of 0 if there is none. This is only done if
+ *  extraDataOut is not NULL; if it is NULL then this step is skipped.
+ *
+ *  If unit is NULL, unit->cardNo is above 853, or if unit->cardNo is 671
+ *  (Summoned Lord Exodia) then the function returns false. If ignoreMenu is
+ *  false and the disable leader abilities option is set in custom duel, and
+ *  unit has its side's leader abilities disabled, the function returns false.
+ *  If ability is not a valid value for LeaderAbility, false is returned.
+ *
+ *  Otherwise any extra data is written to *extraDataOut (if the pointer is not
+ *  NULL). The function then returns true if the leader has the ability in
+ *  question and its rank is high enough to enable it.
+ *
+ *  @param unit Pointer to the leader unit
+ *  @param ability Type of leader ability
+ *  @param extraDataOut Address to write some extra data concerning the ability
+ *  to
+ *  @param ignoreMenu Whether to ignore the custom duel option to disable leader
+ *  abilities
+ *  @return Whether unit has the specified ability
+ */
+bool SzDuel_GetUnitLeaderAbility3(
+    Unit* unit, LeaderAbility ability, int* extraDataOut, bool ignoreMenu);
 
 /** @brief Return the location of the unit specified by a side and position.
  *
