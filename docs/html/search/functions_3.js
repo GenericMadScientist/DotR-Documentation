@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['qsort_133',['qsort',['../stdlib_8h.html#aa1033a18faee4de91f2a3a7e4dc13c3f',1,'stdlib.h']]]
+  ['pow_137',['pow',['../stdlib_8h.html#a27382c762927551c5849a43cbd0d0e71',1,'stdlib.h']]],
+  ['printf_138',['printf',['../stdlib_8h.html#a98631211a4a8aee62f572375d5b637be',1,'stdlib.h']]]
 ];
