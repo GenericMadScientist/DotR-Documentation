@@ -2,7 +2,7 @@
 
 | Address | Function                                                              | File      |
 | ------- | --------------------------------------------------------------------- | --------- |
-| 198790  | void * memcpy(void *, void *, size_t)                                 | stdlib.h  |
+| 198790  | void * memcpy(void *, const void *, size_t)                           | stdlib.h  |
 | 198948  | void * memset(void *, int, size_t)                                    | stdlib.h  |
 | 199B50  | int printf(const char *, ...)                                         | stdlib.h  |
 | 199BC0  | void qsort(void *, size_t, size_t, int *(const void *, const void *)) | stdlib.h  |
