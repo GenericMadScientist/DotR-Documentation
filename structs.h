@@ -3,25 +3,37 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
 
+#include "enums.h"
+
 struct CardConstInfo {
-    unsigned char kind;
+    /*! The kind of the card. */
+    Kind kind;
     unsigned char kindOfs;
+    /*! Top four bits are level, bottom four bits are attribute. */
     unsigned char lvAttr;
     unsigned char deckCost;
     unsigned short effectId;
     unsigned short xaxId;
     /*! A bitset containing the default AP and some flags.
+     *
      *  apWithFlags & 0x1FFF is the default AP.
+     *
      *  apWithFlags & 0x2000 is if the card has an image in DATA/PICPACK.MRG.
+     *
      *  apWithFlags & 0x4000 is if the card's password will work.
+     *
      *  apWIthFlags & 0x8000 is if the card can be received from reincarnation.
      */
     unsigned short apWithFlags;
     /*! A bitset containing the default DP and some flags.
+     *
      *  dpWithFlags & 0x1FFF is the default DP.
+     *
      *  dpWithFlags & 0x2000 is if the card appears in slots normally.
+     *
      *  dpWithFlags & 0x4000 is if the card is a slot rare, with the exception
      *  of Brain Control. This is ignored for the special slot rares.
+     *
      *  dpWIthFlags & 0x8000 is not understood.
      */
     unsigned short dpWithFlags;
@@ -197,6 +209,8 @@ struct Unit {
     unsigned char modelId;
     /*! Starts at 0 for the first summoned card, 1 for the next, etc. */
     unsigned char summonOrder;
+    /*! The level reduction being applied to the card due to the level reduction
+     *  leader ability. */
     unsigned char lvRev;
     unsigned char curseRest;
     unsigned char spellRest;

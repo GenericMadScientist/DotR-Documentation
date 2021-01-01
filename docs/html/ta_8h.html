@@ -77,12 +77,24 @@ Functions</h2></td></tr>
 <tr class="memitem:ae24483c87d12d8fd386ab3433bf3180d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ae24483c87d12d8fd386ab3433bf3180d">Ta_GetCurrentSide</a> (int side, int pos)</td></tr>
 <tr class="memdesc:ae24483c87d12d8fd386ab3433bf3180d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the side controlling a unit specified by a side and position.  <a href="ta_8h.html#ae24483c87d12d8fd386ab3433bf3180d">More...</a><br /></td></tr>
 <tr class="separator:ae24483c87d12d8fd386ab3433bf3180d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55d2539a671e58a614af9d7a885d24e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad55d2539a671e58a614af9d7a885d24e">Ta_GetLDParamOfs2</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, int col, int row)</td></tr>
+<tr class="memdesc:ad55d2539a671e58a614af9d7a885d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stat bonuses from the two leaders.  <a href="ta_8h.html#ad55d2539a671e58a614af9d7a885d24e">More...</a><br /></td></tr>
+<tr class="separator:ad55d2539a671e58a614af9d7a885d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78d673fe050da9f0b11855154727f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">Ta_GetUnitEffect</a> (int side, int pos, int effInd)</td></tr>
 <tr class="memdesc:ad78d673fe050da9f0b11855154727f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an effect of the unit specified by a side and position.  <a href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">More...</a><br /></td></tr>
 <tr class="separator:ad78d673fe050da9f0b11855154727f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9251f7a7e5498f19bafd50a09f7b9c36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a9251f7a7e5498f19bafd50a09f7b9c36">Ta_IsLD_PDownObj</a> (int side, <a class="el" href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> objKind)</td></tr>
+<tr class="memdesc:a9251f7a7e5498f19bafd50a09f7b9c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if side's leader would power down opposing cards with the given kind, if said leader had Weaken Specific Enemy Type.  <a href="ta_8h.html#a9251f7a7e5498f19bafd50a09f7b9c36">More...</a><br /></td></tr>
+<tr class="separator:a9251f7a7e5498f19bafd50a09f7b9c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f15c583e10da4a8f710a5c10239e98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a91f15c583e10da4a8f710a5c10239e98">Ta_IsLDAbl</a> (<a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> ability, int side)</td></tr>
 <tr class="memdesc:a91f15c583e10da4a8f710a5c10239e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if side's leader has the specified type of ability active.  <a href="ta_8h.html#a91f15c583e10da4a8f710a5c10239e98">More...</a><br /></td></tr>
 <tr class="separator:a91f15c583e10da4a8f710a5c10239e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d137d0367bec8bb3dd75688506928b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a5d137d0367bec8bb3dd75688506928b4">Ta_IsLDRange</a> (int side, int col, int row)</td></tr>
+<tr class="memdesc:a5d137d0367bec8bb3dd75688506928b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if a square is in range of a side's leader.  <a href="ta_8h.html#a5d137d0367bec8bb3dd75688506928b4">More...</a><br /></td></tr>
+<tr class="separator:a5d137d0367bec8bb3dd75688506928b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737ae6e11604fa371799ef6322254c3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a737ae6e11604fa371799ef6322254c3a">Ta_IsLDRangeAvilityFromLoc</a> (int loc, int side, <a class="el" href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> kind, <a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a> ability)</td></tr>
+<tr class="memdesc:a737ae6e11604fa371799ef6322254c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if a side's leader has the given kind and ability that covers loc.  <a href="ta_8h.html#a737ae6e11604fa371799ef6322254c3a">More...</a><br /></td></tr>
+<tr class="separator:a737ae6e11604fa371799ef6322254c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a676a1ad6fcb123d08218a2e851d1d3e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a676a1ad6fcb123d08218a2e851d1d3e6">Ta_IsSquareRange</a> (int srcCol, int srcRow, int col, int row, int range)</td></tr>
 <tr class="memdesc:a676a1ad6fcb123d08218a2e851d1d3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if one point is inside a specified square.  <a href="ta_8h.html#a676a1ad6fcb123d08218a2e851d1d3e6">More...</a><br /></td></tr>
 <tr class="separator:a676a1ad6fcb123d08218a2e851d1d3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,6 +157,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad55d2539a671e58a614af9d7a885d24e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55d2539a671e58a614af9d7a885d24e">&#9670;&nbsp;</a></span>Ta_GetLDParamOfs2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ta_GetLDParamOfs2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the stat bonuses from the two leaders. </p>
+<p>This gets the change in stats due to Increased Strength for Same Type Friendlies and Weaken Specific Enemy Type. SzDuel_GetUnitLevel is used to calculate the changes, rather than the data embedded in <a class="el" href="struct_leader_abilities.html">LeaderAbilities</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>The unit to be strengthened and/or weakened </td></tr>
+    <tr><td class="paramname">col</td><td>The column unit is to be on </td></tr>
+    <tr><td class="paramname">row</td><td>The row unit is to be on </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stat bonuses the leaders apply to unit </dd></dl>
+
+</div>
+</div>
 <a id="ad78d673fe050da9f0b11855154727f1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad78d673fe050da9f0b11855154727f1c">&#9670;&nbsp;</a></span>Ta_GetUnitEffect()</h2>
 
@@ -192,6 +250,58 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9251f7a7e5498f19bafd50a09f7b9c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9251f7a7e5498f19bafd50a09f7b9c36">&#9670;&nbsp;</a></span>Ta_IsLD_PDownObj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_IsLD_PDownObj </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a>&#160;</td>
+          <td class="paramname"><em>objKind</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns if side's leader would power down opposing cards with the given kind, if said leader had Weaken Specific Enemy Type. </p>
+<p>Side's leader's kind is what determines the kinds it powers down. The correspondence is given below, in the form Leader kind -&gt; powered down kinds.</p>
+<p>Spellcaster -&gt; Fiend</p>
+<p>Zombie -&gt; Warrior</p>
+<p>Warrior -&gt; Dragon and Spellcaster</p>
+<p>Beast -&gt; Fish</p>
+<p>Winged Beast -&gt; Insect and Fish</p>
+<p>Fiend -&gt; Spellcaster</p>
+<p>Insect -&gt; Sea Serpent</p>
+<p>Reptile -&gt; Beast and Winged Beast</p>
+<p>Fish -&gt; Thunder</p>
+<p>Thunder -&gt; Zombie and Machine</p>
+<p>Aqua -&gt; Machine and Pyro</p>
+<p>Pyro -&gt; Beast-Warrior</p>
+<p>others -&gt; None</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>Side of leader </td></tr>
+    <tr><td class="paramname">objKind</td><td>Kind of opposing monster </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether side's leader would power down objKind cards </dd></dl>
+
+</div>
+</div>
 <a id="a91f15c583e10da4a8f710a5c10239e98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91f15c583e10da4a8f710a5c10239e98">&#9670;&nbsp;</a></span>Ta_IsLDAbl()</h2>
 
@@ -228,6 +338,105 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the side's leader has the specified ability active </dd></dl>
+
+</div>
+</div>
+<a id="a5d137d0367bec8bb3dd75688506928b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d137d0367bec8bb3dd75688506928b4">&#9670;&nbsp;</a></span>Ta_IsLDRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_IsLDRange </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets if a square is in range of a side's leader. </p>
+<p>This function checks a 5 x 5 square around side's leader if it has Extended Support Range, or a 3 x 3 square otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to check the leader of </td></tr>
+    <tr><td class="paramname">col</td><td>The column of the position to check </td></tr>
+    <tr><td class="paramname">row</td><td>The row of the position to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the side's leader has the specified ability active </dd></dl>
+
+</div>
+</div>
+<a id="a737ae6e11604fa371799ef6322254c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737ae6e11604fa371799ef6322254c3a">&#9670;&nbsp;</a></span>Ta_IsLDRangeAvilityFromLoc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_IsLDRangeAvilityFromLoc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a>&#160;</td>
+          <td class="paramname"><em>kind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1">LeaderAbility</a>&#160;</td>
+          <td class="paramname"><em>ability</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets if a side's leader has the given kind and ability that covers loc. </p>
+<p>This function returns true only if side's leader has the given kind, the given ability, and if loc is within the range of side's leader.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc</td><td>The location of the position to check, of the form (row &lt;&lt; 8) | col </td></tr>
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to check the leader of </td></tr>
+    <tr><td class="paramname">kind</td><td>The desired kind </td></tr>
+    <tr><td class="paramname">ability</td><td>The ability to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the side's leader has the right kind and ability active at loc </dd></dl>
 
 </div>
 </div>
@@ -276,7 +485,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if one point is inside a specified square. </p>
-<p>The centre of the square is given by (srcCol, srcRow) and is given by the points (p_col, p_row) such that |p_row - srcRow| &lt;= range / 2 and |p_col - srcCol| &lt;= range / 2.</p>
+<p>The centre of the square is given by (srcCol, srcRow) and is given by the points (p_col, p_row) such that |p_col - srcCol| &lt;= range / 2 and |p_row - srcRow| &lt;= range / 2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">srcCol</td><td>The column of the square's centre </td></tr>

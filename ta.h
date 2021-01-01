@@ -19,6 +19,19 @@
  */
 int Ta_GetCurrentSide(int side, int pos);
 
+/** @brief Gets the stat bonuses from the two leaders.
+ *
+ *  This gets the change in stats due to Increased Strength for Same Type
+ *  Friendlies and Weaken Specific Enemy Type. SzDuel_GetUnitLevel is used to
+ *  calculate the changes, rather than the data embedded in LeaderAbilities.
+ *
+ *  @param unit The unit to be strengthened and/or weakened
+ *  @param col The column unit is to be on
+ *  @param row The row unit is to be on
+ *  @return The stat bonuses the leaders apply to unit
+ */
+int Ta_GetLDParamOfs2(Unit* unit, int col, int row);
+
 /** @brief Return an effect of the unit specified by a side and position.
  *
  *  If the unit is invalid or if effInd does not lie between 0 and 4 inclusive
@@ -43,6 +56,45 @@ int Ta_GetCurrentSide(int side, int pos);
  */
 Effect* Ta_GetUnitEffect(int side, int pos, int effInd);
 
+/** @brief Returns if side's leader would power down opposing cards with the
+ *  given kind, if said leader had Weaken Specific Enemy Type.
+ *
+ *  Side's leader's kind is what determines the kinds it powers down. The
+ *  correspondence is given below, in the form Leader kind -> powered down
+ *  kinds.
+ *
+ *  Spellcaster -> Fiend
+ *
+ *  Zombie -> Warrior
+ *
+ *  Warrior -> Dragon and Spellcaster
+ *
+ *  Beast -> Fish
+ *
+ *  Winged Beast -> Insect and Fish
+ *
+ *  Fiend -> Spellcaster
+ *
+ *  Insect -> Sea Serpent
+ *
+ *  Reptile -> Beast and Winged Beast
+ *
+ *  Fish -> Thunder
+ *
+ *  Thunder -> Zombie and Machine
+ *
+ *  Aqua -> Machine and Pyro
+ *
+ *  Pyro -> Beast-Warrior
+ *
+ *  others -> None
+ *
+ *  @param side Side of leader
+ *  @param objKind Kind of opposing monster
+ *  @return Whether side's leader would power down objKind cards
+ */
+bool Ta_IsLD_PDownObj(int side, Kind objKind);
+
 /** @brief Gets if side's leader has the specified type of ability active.
  *
  *  This function takes into account the effect of Moisture Creature. If the
@@ -55,11 +107,40 @@ Effect* Ta_GetUnitEffect(int side, int pos, int effInd);
  */
 bool Ta_IsLDAbl(LeaderAbility ability, int side);
 
+/** @brief Gets if a square is in range of a side's leader.
+ *
+ *  This function checks a 5 x 5 square around side's leader if it has Extended
+ *  Support Range, or a 3 x 3 square otherwise.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to check the leader of
+ *  @param col The column of the position to check
+ *  @param row The row of the position to check
+ *  @return Whether the side's leader has the specified ability active
+ */
+bool Ta_IsLDRange(int side, int col, int row);
+
+/** @brief Gets if a side's leader has the given kind and ability that covers
+ *  loc.
+ *
+ *  This function returns true only if side's leader has the given kind, the
+ *  given ability, and if loc is within the range of side's leader.
+ *
+ *  @param loc The location of the position to check, of the form
+ *  (row << 8) | col
+ *  @param side The side (Lancastrian/Yorkist/???) to check the leader of
+ *  @param kind The desired kind
+ *  @param ability The ability to check
+ *  @return Whether the side's leader has the right kind and ability active at
+ *  loc
+ */
+bool Ta_IsLDRangeAvilityFromLoc(
+    int loc, int side, Kind kind, LeaderAbility ability);
+
 /** @brief Checks if one point is inside a specified square.
  *
  *  The centre of the square is given by (srcCol, srcRow) and is given by the
- *  points (p_col, p_row) such that |p_row - srcRow| <= range / 2 and
- *  |p_col - srcCol| <= range / 2.
+ *  points (p_col, p_row) such that |p_col - srcCol| <= range / 2 and
+ *  |p_row - srcRow| <= range / 2.
  *
  *  @param srcCol The column of the square's centre
  *  @param srcRow The row of the square's centre

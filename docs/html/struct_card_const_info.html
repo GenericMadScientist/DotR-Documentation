@@ -70,14 +70,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad44ed1c6eed874c0ac6e128334a99d82"><td class="memItemLeft" align="right" valign="top"><a id="ad44ed1c6eed874c0ac6e128334a99d82"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>kind</b></td></tr>
-<tr class="separator:ad44ed1c6eed874c0ac6e128334a99d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1cfcd3eddfb3481ae91b5b65ec9630"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_card_const_info.html#a6b1cfcd3eddfb3481ae91b5b65ec9630">kind</a></td></tr>
+<tr class="separator:a6b1cfcd3eddfb3481ae91b5b65ec9630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a507ff7a6c20fda98908f57753c52bb5b"><td class="memItemLeft" align="right" valign="top"><a id="a507ff7a6c20fda98908f57753c52bb5b"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>kindOfs</b></td></tr>
 <tr class="separator:a507ff7a6c20fda98908f57753c52bb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d42edf225bdd443a6b9d4c730c43380"><td class="memItemLeft" align="right" valign="top"><a id="a7d42edf225bdd443a6b9d4c730c43380"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>lvAttr</b></td></tr>
+<tr class="memitem:a7d42edf225bdd443a6b9d4c730c43380"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_card_const_info.html#a7d42edf225bdd443a6b9d4c730c43380">lvAttr</a></td></tr>
 <tr class="separator:a7d42edf225bdd443a6b9d4c730c43380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5f1a4485425d1404c7d706f4fb9875"><td class="memItemLeft" align="right" valign="top"><a id="a4c5f1a4485425d1404c7d706f4fb9875"></a>
 unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>deckCost</b></td></tr>
@@ -108,7 +106,11 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>password</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A bitset containing the default AP and some flags. apWithFlags &amp; 0x1FFF is the default AP. apWithFlags &amp; 0x2000 is if the card has an image in DATA/PICPACK.MRG. apWithFlags &amp; 0x4000 is if the card's password will work. apWIthFlags &amp; 0x8000 is if the card can be received from reincarnation. </p>
+<p>A bitset containing the default AP and some flags.</p>
+<p>apWithFlags &amp; 0x1FFF is the default AP.</p>
+<p>apWithFlags &amp; 0x2000 is if the card has an image in DATA/PICPACK.MRG.</p>
+<p>apWithFlags &amp; 0x4000 is if the card's password will work.</p>
+<p>apWIthFlags &amp; 0x8000 is if the card can be received from reincarnation. </p>
 
 </div>
 </div>
@@ -123,7 +125,41 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>password</b>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>A bitset containing the default DP and some flags. dpWithFlags &amp; 0x1FFF is the default DP. dpWithFlags &amp; 0x2000 is if the card appears in slots normally. dpWithFlags &amp; 0x4000 is if the card is a slot rare, with the exception of Brain Control. This is ignored for the special slot rares. dpWIthFlags &amp; 0x8000 is not understood. </p>
+<p>A bitset containing the default DP and some flags.</p>
+<p>dpWithFlags &amp; 0x1FFF is the default DP.</p>
+<p>dpWithFlags &amp; 0x2000 is if the card appears in slots normally.</p>
+<p>dpWithFlags &amp; 0x4000 is if the card is a slot rare, with the exception of Brain Control. This is ignored for the special slot rares.</p>
+<p>dpWIthFlags &amp; 0x8000 is not understood. </p>
+
+</div>
+</div>
+<a id="a6b1cfcd3eddfb3481ae91b5b65ec9630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1cfcd3eddfb3481ae91b5b65ec9630">&#9670;&nbsp;</a></span>kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enums_8h.html#aa10c9e8951b8ccf714a59ec321bdac5b">Kind</a> CardConstInfo::kind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The kind of the card. </p>
+
+</div>
+</div>
+<a id="a7d42edf225bdd443a6b9d4c730c43380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d42edf225bdd443a6b9d4c730c43380">&#9670;&nbsp;</a></span>lvAttr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char CardConstInfo::lvAttr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Top four bits are level, bottom four bits are attribute. </p>
 
 </div>
 </div>

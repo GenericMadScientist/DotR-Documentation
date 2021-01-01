@@ -12,8 +12,11 @@
 | 1E02F0  | int SzDuel_GetUnitAP2(Unit *, bool)                                   | szduel.h  |
 | 1E0370  | int SzDuel_GetUnitDP(int, int, bool)                                  | szduel.h  |
 | 1E03D0  | int SzDuel_GetUnitDP2(Unit *, bool)                                   | szduel.h  |
+| 1E0690  | int SzDuel_GetUnitConstKind(int, int)                                 | szduel.h  |
 | 1E0700  | int SzDuel_GetUnitKind(int, int)                                      | szduel.h  |
 | 1E0830  | int SzDuel_GetUnitAttr(int, int)                                      | szduel.h  |
+| 1E08F0  | int SzDuel_GetUnitLevel(int, int, bool)                               | szduel.h  |
+| 1E0950  | int SzDuel_GetUnitLevel2(Unit *, bool)                                | szduel.h  |
 | 1E0B70  | Effect * SzDuel_GetUnitEffect(int, int, int)                          | szduel.h  |
 | 1E0C00  | bool SzDuel_GetUnitLeaderAbility(int, int, LeaderAbility, int *)      | szduel.h  |
 | 1E0C70  | bool SzDuel_GetUnitLeaderAbility2(Unit *, LeaderAbility, int *)       | szduel.h  |
@@ -40,4 +43,8 @@
 | 266F70  | int Ta_SearchUncTypeNaturalEffectUserNumWithSide(int, int)            | ta.h      |
 | 271740  | bool Ta_IsLDAbl(LeaderAbility, int)                                   | ta.h      |
 | 271950  | bool Ta_IsSquareRange(int, int, int, int, int)                        | ta.h      |
+| 271A40  | bool Ta_IsLDRange(int, int, int)                                      | ta.h      |
+| 271AF0  | int Ta_GetLDParamOfs2(Unit *, int, int)                               | ta.h      |
+| 271C90  | bool Ta_IsLD_PDownObj(int, Kind)                                      | ta.h      |
+| 271F00  | bool Ta_IsLDRangeAvilityFromLoc(int, int, Kind, LeaderAbility)        | ta.h      |
 | 27C670  | int TaLogic_GetUnitCtlLstLen(unsigned short *)                        | talogic.h |

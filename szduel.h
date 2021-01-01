@@ -153,6 +153,22 @@ int SzDuel_GetUnitAttr(int side, int pos);
  */
 int SzDuel_GetUnitCardNo(int side, int pos);
 
+/** @brief Return the default kind of the unit specified by a side and position.
+ *
+ *  The return value should be interpreted as a member of the Kind enum. If
+ *  there is no unit given by (side, pos), then instead -1 is returned.
+ *
+ *  The need for this function is the fact that it is possible to change a
+ *  unit's kind (e.g., Call of the Haunted).
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @return The default kind of the specified Unit
+ */
+int SzDuel_GetUnitConstKind(int side, int pos);
+
 /** @brief Return the defense of the unit specified by a side and position,
  *  which may or may not include boosts.
  *
@@ -283,6 +299,33 @@ bool SzDuel_GetUnitLeaderAbility2(
  */
 bool SzDuel_GetUnitLeaderAbility3(
     Unit* unit, LeaderAbility ability, int* extraDataOut, bool ignoreMenu);
+
+/** @brief Return the level of a uni.
+ *
+ *  This function returns -1 if unit is invalid. If ignoreBoosts is false,
+ *  the unit's lvRev is deducted from the base level. Then the level is clamped
+ *  between 0 and 12 inclusive.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param ignoreBoosts Whether to ignore unit->lvRev
+ *  @return The unit's level
+ */
+int SzDuel_GetUnitLevel(int side, int pos, bool ignoreBoosts);
+
+/** @brief Return the level of a uni.
+ *
+ *  This function returns -1 if unit is NULL. If ignoreBoosts is false,
+ *  unit->lvRev is deducted from the base level. Then the level is clamped
+ *  between 0 and 12 inclusive.
+ *
+ *  @param unit Unit to get the level of
+ *  @param ignoreBoosts Whether to ignore unit->lvRev
+ *  @return The unit's level
+ */
+int SzDuel_GetUnitLevel2(Unit* unit, bool ignoreBoosts);
 
 /** @brief Return the location of the unit specified by a side and position.
  *
