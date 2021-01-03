@@ -7,5 +7,6 @@ var searchData=
   ['cards_8',['cards',['../struct_save_data.html#aa02d21d382eaa68189f9fb07bfaa2712',1,'SaveData']]],
   ['checklandagreement_9',['CheckLandAgreement',['../global_8h.html#a5db194607081af07cc8700be412b4a31',1,'global.h']]],
   ['constinfo_10',['constInfo',['../struct_unit.html#a375a63f745d230a14d86c7183782b3c4',1,'Unit']]],
-  ['convunitidtoflaglist_11',['ConvUnitIDtoFlagList',['../global_8h.html#a0d59c9c43cae2873e93194cc2c8970bd',1,'global.h']]]
+  ['convunitidtoflaglist_11',['ConvUnitIDtoFlagList',['../global_8h.html#a0d59c9c43cae2873e93194cc2c8970bd',1,'global.h']]],
+  ['cosf_12',['cosf',['../stdlib_8h.html#a6058b6111dc7347a7e905eac75a25266',1,'stdlib.h']]]
 ];

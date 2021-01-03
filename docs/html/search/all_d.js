@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['ram_20map_52',['RAM Map',['../md_ram-map.html',1,'']]],
-  ['rand_53',['rand',['../stdlib_8h.html#ae23144bcbb8e3742b00eb687c36654d1',1,'stdlib.h']]],
-  ['rankwithflags_54',['rankWithFlags',['../struct_card_info.html#a77183544f6d9c55c85beb9ae26cae37e',1,'CardInfo']]],
-  ['roseflag_55',['roseFlag',['../szdata_8h.html#ac63e6e29ea6f83262d7fa0d9b2b75541',1,'szdata.h']]]
+  ['ram_20map_55',['RAM Map',['../md_ram-map.html',1,'']]],
+  ['rand_56',['rand',['../stdlib_8h.html#ae23144bcbb8e3742b00eb687c36654d1',1,'stdlib.h']]],
+  ['rankwithflags_57',['rankWithFlags',['../struct_card_info.html#a77183544f6d9c55c85beb9ae26cae37e',1,'CardInfo']]],
+  ['roseflag_58',['roseFlag',['../szdata_8h.html#ac63e6e29ea6f83262d7fa0d9b2b75541',1,'szdata.h']]]
 ];

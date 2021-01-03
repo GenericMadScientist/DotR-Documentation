@@ -7,6 +7,10 @@
 | 199B50  | int printf(const char *, ...)                                         | stdlib.h  |
 | 199BC0  | void qsort(void *, size_t, size_t, int *(const void *, const void *)) | stdlib.h  |
 | 19A5C8  | int rand(void)                                                        | stdlib.h  |
+| 1A6898  | float cosf(float)                                                     | stdlib.h  |
+| 1A6970  | float fabsf(float)                                                    | stdlib.h  |
+| 1A6998  | float floorf(float)                                                   | stdlib.h  |
+| 1A6A88  | float sinf(float)                                                     | stdlib.h  |
 | 1A6BE8  | double pow(double, double)                                            | stdlib.h  |
 | 1A82E0  | int SzGame_GetMenuNum(int index)                                      | szgame.h  |
 | 1DD130  | Unit * SzDuel_GetCardInfo(int, int)                                   | szduel.h  |

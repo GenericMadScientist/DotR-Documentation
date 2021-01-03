@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['getcap_146',['GetCap',['../global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db',1,'global.h']]],
-  ['getparcap_147',['GetParCap',['../global_8h.html#a931edd4c23ae4a67b35678e9a3e9ce53',1,'global.h']]]
+  ['fabsf_151',['fabsf',['../stdlib_8h.html#afbc6b1d380943f69fec7da0bb61eae7d',1,'stdlib.h']]],
+  ['floorf_152',['floorf',['../stdlib_8h.html#a2fa6c9248dd1dbf0490b9322e85f7f4f',1,'stdlib.h']]]
 ];

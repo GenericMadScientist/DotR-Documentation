@@ -9,6 +9,15 @@
  */
 extern unsigned long long seed;
 
+/** @brief https://en.cppreference.com/w/c/numeric/math/cos */
+float cosf(float arg);
+
+/** @brief https://en.cppreference.com/w/c/numeric/math/fabs */
+float fabsf(float arg);
+
+/** @brief https://en.cppreference.com/w/c/numeric/math/floor */
+float floorf(float arg);
+
 /** @brief https://en.cppreference.com/w/c/string/byte/memcpy */
 void* memcpy(void* dest, const void* src, size_t count);
 
@@ -24,6 +33,9 @@ int printf(const char* format, ...);
 /** @brief https://en.cppreference.com/w/c/algorithm/qsort */
 void qsort(void* ptr, size_t count, size_t size,
     int (*comp)(const void*, const void*));
+
+/** @brief https://en.cppreference.com/w/c/numeric/math/sin */
+float sinf(float arg);
 
 /** @brief https://en.cppreference.com/w/c/numeric/random/rand */
 int rand(void);
