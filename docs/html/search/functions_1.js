@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['getcap_133',['GetCap',['../global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db',1,'global.h']]],
-  ['getparcap_134',['GetParCap',['../global_8h.html#a931edd4c23ae4a67b35678e9a3e9ce53',1,'global.h']]]
+  ['do_5fchecklandagreement_144',['Do_CheckLandAgreement',['../global_8h.html#a169be93b4c4f4324202173aa4aba9ebb',1,'global.h']]],
+  ['do_5fchk_5fenc_145',['Do_Chk_Enc',['../global_8h.html#a8ad65e1680c9e2fa1955b134013f0c95',1,'global.h']]]
 ];

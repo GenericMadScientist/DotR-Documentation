@@ -1,13 +1,10 @@
 var searchData=
 [
-  ['magiceffects_31',['magicEffects',['../szduel_8h.html#acf2457a4c19954c85f807c602f1ad516',1,'szduel.h']]],
-  ['mapinfo_32',['MapInfo',['../struct_map_info.html',1,'MapInfo'],['../szduel_8h.html#a6efa6cd7ac6a97eb9d0412a07c2e7b79',1,'mapInfo():&#160;szduel.h']]],
-  ['magic_20effects_33',['Magic Effects',['../md_magic-effects.html',1,'']]],
-  ['monster_20effects_34',['Monster Effects',['../md_monster-effects.html',1,'']]],
-  ['memcpy_35',['memcpy',['../stdlib_8h.html#a82c26cd350df88414f825bca40183ec2',1,'stdlib.h']]],
-  ['memset_36',['memset',['../stdlib_8h.html#ab229cfa9b9367a8ca2819d8ca0f46e4f',1,'stdlib.h']]],
-  ['menunums_37',['menuNums',['../szgame_8h.html#adde85f7b6c1db5bf10ee63c13ae39436',1,'szgame.h']]],
-  ['model_38',['Model',['../struct_model.html',1,'']]],
-  ['models_39',['models',['../szmodel_8h.html#abeb152a3e7914956af5e2fd0acb75d9e',1,'szmodel.h']]],
-  ['monstereffects_40',['monsterEffects',['../szduel_8h.html#acf1c964e87a6439527698377ace94661',1,'szduel.h']]]
+  ['leaderabilities_31',['leaderAbilities',['../union_card_effects.html#a0473b960988da7323303ea693e7af496',1,'CardEffects::leaderAbilities()'],['../structs_8h.html#ae094c57b5e9b495a064415e0d4c8e720',1,'leaderAbilities():&#160;structs.h'],['../szduel_8h.html#a082e99f03c26bb3259814b0301090a29',1,'leaderAbilities():&#160;szduel.h']]],
+  ['leaderability_32',['LeaderAbility',['../enums_8h.html#a2dd5a6eab5a248d50c7f05696e1f8ab1',1,'enums.h']]],
+  ['leaderrank_33',['LeaderRank',['../enums_8h.html#a8a2ab0dc1116219251b433c81d499031',1,'enums.h']]],
+  ['loccol_34',['locCol',['../struct_unit.html#a4878a796624c66a4bb9183a52b8bc703',1,'Unit']]],
+  ['locrow_35',['locRow',['../struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b',1,'Unit']]],
+  ['lvattr_36',['lvAttr',['../struct_card_const_info.html#a7d42edf225bdd443a6b9d4c730c43380',1,'CardConstInfo']]],
+  ['lvrev_37',['lvRev',['../struct_unit.html#ae63ce57632c517d6991dfcc0204d482d',1,'Unit']]]
 ];

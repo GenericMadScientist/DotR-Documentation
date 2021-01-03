@@ -80,7 +80,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_effect.html">Effect</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equip_data.html">EquipData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_card_effects.html">CardEffects</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_model.html">Model</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,51 +99,45 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a7332412b9f33d624d1f8d414c7993194"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_leader_abilities.html">LeaderAbilities</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_8h.html#a7332412b9f33d624d1f8d414c7993194">effects</a> [5]</td></tr>
-<tr class="separator:a7332412b9f33d624d1f8d414c7993194"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6498e76a23c9bccdc68c5e30c4e903f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_8h.html#a6498e76a23c9bccdc68c5e30c4e903f4">leaderAbilities</a></td></tr>
-<tr class="memdesc:a6498e76a23c9bccdc68c5e30c4e903f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2C3338.  <a href="structs_8h.html#a6498e76a23c9bccdc68c5e30c4e903f4">More...</a><br /></td></tr>
-<tr class="separator:a6498e76a23c9bccdc68c5e30c4e903f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae094c57b5e9b495a064415e0d4c8e720"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_equip_data.html">EquipData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structs_8h.html#ae094c57b5e9b495a064415e0d4c8e720">leaderAbilities</a> [20]</td></tr>
+<tr class="memdesc:ae094c57b5e9b495a064415e0d4c8e720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2C3338.  <a href="structs_8h.html#ae094c57b5e9b495a064415e0d4c8e720">More...</a><br /></td></tr>
+<tr class="separator:ae094c57b5e9b495a064415e0d4c8e720"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a7332412b9f33d624d1f8d414c7993194"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7332412b9f33d624d1f8d414c7993194">&#9670;&nbsp;</a></span>effects</h2>
+<a id="ae094c57b5e9b495a064415e0d4c8e720"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae094c57b5e9b495a064415e0d4c8e720">&#9670;&nbsp;</a></span>leaderAbilities</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="struct_leader_abilities.html">LeaderAbilities</a> effects[5]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This union represents the effects of a unit. effects is for a card's normal effects, leaderAbilities are used for leaders.</p>
-<p>The five effects for a card, in the order of: </p><pre class="fragment">0 - Attack
-
-1 - Movement
-
-2 - Nature Effect
-
-3 - Flip
-
-4 - Destruction
-</pre> 
-</div>
-</div>
-<a id="a6498e76a23c9bccdc68c5e30c4e903f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6498e76a23c9bccdc68c5e30c4e903f4">&#9670;&nbsp;</a></span>leaderAbilities</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a> leaderAbilities</td>
+          <td class="memname">struct <a class="el" href="struct_equip_data.html">EquipData</a> leaderAbilities[20]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Address 2C3338. </p>
-<p>The leader abilities for a deck leader. </p>
+<p>This struct represents possible leader abilities. An ability is not present if the corresponding value is 0xFFFF. The order of the abilities does not match the values of the LeaderAbility enum. The order (and meaning of the values) are as follows:</p>
+<p>0 - Hidden Card: ability is present if the value is nonzero</p>
+<p>1 - Extra Slots: ability is present if the value is nonzero</p>
+<p>2 - Destiny Draw: required rank is upper byte</p>
+<p>3 - Unknown Ability: required rank is upper byte, extra data is lower byte</p>
+<p>4 - LP Recovery: required rank is upper byte</p>
+<p>5 - Increased Movement: required rank is upper byte</p>
+<p>6 - Terrain Change: required rank is lower byte, extra data is upper byte</p>
+<p>7 - Direct Damage Halved: required rank is upper byte</p>
+<p>8 - Extended Support Range: required rank is upper byte</p>
+<p>9 - Level Cost Reduction For Summoning Same Type: required rank is lower byte, extra data is upper byte</p>
+<p>10 - Improved Resistance For Same Type Friendlies: required rank is upper byte</p>
+<p>11 - Increased Strength For Same Type Friendlies: required rank is lower byte, extra data is upper byte</p>
+<p>12 - Open Opponent's Card: required rank is upper byte</p>
+<p>13 - Movement Boost For Same Type Friendlies: required rank is upper byte</p>
+<p>14 - Spellbind Specific Enemy Type: required rank is upper byte</p>
+<p>15 - Weaken Specific Enemy Type: required rank is lower byte, extra data is upper byte</p>
+<p>16 - unused</p>
+<p>17 - Destroy Specific Enemy Type: required rank is upper byte</p>
+<p>18 - unused</p>
+<p>19 - unused </p>
 
 </div>
 </div>

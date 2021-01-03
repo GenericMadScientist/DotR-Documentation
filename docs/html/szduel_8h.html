@@ -137,7 +137,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a082e99f03c26bb3259814b0301090a29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a082e99f03c26bb3259814b0301090a29">leaderAbilities</a> [683]</td></tr>
+<tr class="memitem:a082e99f03c26bb3259814b0301090a29"><td class="memItemLeft" align="right" valign="top">LeaderAbilities&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#a082e99f03c26bb3259814b0301090a29">leaderAbilities</a> [683]</td></tr>
 <tr class="memdesc:a082e99f03c26bb3259814b0301090a29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address 2C3338.  <a href="szduel_8h.html#a082e99f03c26bb3259814b0301090a29">More...</a><br /></td></tr>
 <tr class="separator:a082e99f03c26bb3259814b0301090a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf1c964e87a6439527698377ace94661"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="szduel_8h.html#acf1c964e87a6439527698377ace94661">monsterEffects</a> [256][5]</td></tr>
@@ -1029,7 +1029,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_leader_abilities.html">LeaderAbilities</a> leaderAbilities[683]</td>
+          <td class="memname">LeaderAbilities leaderAbilities[683]</td>
         </tr>
       </table>
   </td>
@@ -1041,7 +1041,27 @@ Variables</h2></td></tr>
 
 <p>Address 2C3338. </p>
 <p>The leader abilities for all 683 monsters.</p>
-<p>The leader abilities for a deck leader. </p>
+<p>This struct represents possible leader abilities. An ability is not present if the corresponding value is 0xFFFF. The order of the abilities does not match the values of the LeaderAbility enum. The order (and meaning of the values) are as follows:</p>
+<p>0 - Hidden Card: ability is present if the value is nonzero</p>
+<p>1 - Extra Slots: ability is present if the value is nonzero</p>
+<p>2 - Destiny Draw: required rank is upper byte</p>
+<p>3 - Unknown Ability: required rank is upper byte, extra data is lower byte</p>
+<p>4 - LP Recovery: required rank is upper byte</p>
+<p>5 - Increased Movement: required rank is upper byte</p>
+<p>6 - Terrain Change: required rank is lower byte, extra data is upper byte</p>
+<p>7 - Direct Damage Halved: required rank is upper byte</p>
+<p>8 - Extended Support Range: required rank is upper byte</p>
+<p>9 - Level Cost Reduction For Summoning Same Type: required rank is lower byte, extra data is upper byte</p>
+<p>10 - Improved Resistance For Same Type Friendlies: required rank is upper byte</p>
+<p>11 - Increased Strength For Same Type Friendlies: required rank is lower byte, extra data is upper byte</p>
+<p>12 - Open Opponent's Card: required rank is upper byte</p>
+<p>13 - Movement Boost For Same Type Friendlies: required rank is upper byte</p>
+<p>14 - Spellbind Specific Enemy Type: required rank is upper byte</p>
+<p>15 - Weaken Specific Enemy Type: required rank is lower byte, extra data is upper byte</p>
+<p>16 - unused</p>
+<p>17 - Destroy Specific Enemy Type: required rank is upper byte</p>
+<p>18 - unused</p>
+<p>19 - unused </p>
 
 </div>
 </div>
@@ -1116,7 +1136,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Address 2C9DF0. </p>
-<p>Array of effects for every effect monster in the game. The order of the effects are: 0 - Attack 1 - Movement 2 - Nature <a class="el" href="struct_effect.html">Effect</a> 3 - Flip 4 - Destruction </p>
+<p>Array of effects for every effect monster in the game. The order of the effects are:</p>
+<p>0 - Attack</p>
+<p>1 - Movement</p>
+<p>2 - Nature <a class="el" href="struct_effect.html">Effect</a></p>
+<p>3 - Flip</p>
+<p>4 - Destruction </p>
 
 </div>
 </div>

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['ram_20map_45',['RAM Map',['../md_ram-map.html',1,'']]],
-  ['rand_46',['rand',['../stdlib_8h.html#ae23144bcbb8e3742b00eb687c36654d1',1,'stdlib.h']]],
-  ['rankwithflags_47',['rankWithFlags',['../struct_card_info.html#a77183544f6d9c55c85beb9ae26cae37e',1,'CardInfo']]],
-  ['roseflag_48',['roseFlag',['../szdata_8h.html#ac63e6e29ea6f83262d7fa0d9b2b75541',1,'szdata.h']]]
+  ['qsort_51',['qsort',['../stdlib_8h.html#aa1033a18faee4de91f2a3a7e4dc13c3f',1,'stdlib.h']]]
 ];

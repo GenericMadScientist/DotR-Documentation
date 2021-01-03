@@ -56,6 +56,51 @@ struct Effect {
     unsigned int data;
 };
 
+/*! This struct represents some information related to the 49 equip cards. I
+ *  haven't checked the spare entry's purpose, but it might just be because
+ *  Toon compatability is treated as a 50th equip. */
+struct EquipData {
+    /*! Stores the type of effect an equip has, as follows:
+     *
+     *  0 -> standard power increase
+     *
+     *  1 -> add effect (Anti-Magic Fragrance, Crush Card, etc.)
+     *
+     *  2 -> Cursebreaker
+     *
+     *  3 -> Paralyzing Potion
+     *
+     *  4 -> fusion (Cocoon of Evolution, Elegant Egotist, etc.)
+     */
+    unsigned char ids[50];
+    /*! For most equips this stores how much the equip strengthens a card by.
+     *  The exceptions are as follows:
+     *
+     *  0 -> Riryoku
+     *
+     *  1 -> Multiply
+     *
+     *  2 -> Sword of Dragon's Soul
+     *
+     *  3 -> Enchanted Javelin
+     *
+     *  4 -> Anti-Magic Fragrance
+     *
+     *  5 -> Crush Card
+     *
+     *  6 -> Elegant Egotist
+     *
+     *  7 -> Cocoon of Evolution
+     *
+     *  8 -> Metalmorph
+     *
+     *  9 -> Insect Imitation
+     *
+     *  666 -> Cursebreaker, Paralyzing Potion
+     */
+    unsigned short scores[50];
+}
+
 /*! This struct represents possible leader abilities. An ability is not present
  *  if the corresponding value is 0xFFFF. The order of the abilities does not
  *  match the values of the LeaderAbility enum. The order (and meaning of the

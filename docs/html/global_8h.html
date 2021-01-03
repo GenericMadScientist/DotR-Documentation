@@ -72,9 +72,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a5db194607081af07cc8700be412b4a31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a5db194607081af07cc8700be412b4a31">CheckLandAgreement</a> (<a class="el" href="enums_8h.html#a1e35064f4b70226adc63b8fe1af7ddf8">Field</a> field, <a class="el" href="struct_unit.html">Unit</a> *unit)</td></tr>
+<tr class="memdesc:a5db194607081af07cc8700be412b4a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return how a terrain supports a unit.  <a href="global_8h.html#a5db194607081af07cc8700be412b4a31">More...</a><br /></td></tr>
+<tr class="separator:a5db194607081af07cc8700be412b4a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d59c9c43cae2873e93194cc2c8970bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a0d59c9c43cae2873e93194cc2c8970bd">ConvUnitIDtoFlagList</a> (int flagList, int side, int pos)</td></tr>
 <tr class="memdesc:a0d59c9c43cae2873e93194cc2c8970bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a unit to a flaglist.  <a href="global_8h.html#a0d59c9c43cae2873e93194cc2c8970bd">More...</a><br /></td></tr>
 <tr class="separator:a0d59c9c43cae2873e93194cc2c8970bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169be93b4c4f4324202173aa4aba9ebb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a169be93b4c4f4324202173aa4aba9ebb">Do_CheckLandAgreement</a> (<a class="el" href="enums_8h.html#a1e35064f4b70226adc63b8fe1af7ddf8">Field</a> field, <a class="el" href="struct_unit.html">Unit</a> *unit)</td></tr>
+<tr class="memdesc:a169be93b4c4f4324202173aa4aba9ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return how a terrain supports a unit.  <a href="global_8h.html#a169be93b4c4f4324202173aa4aba9ebb">More...</a><br /></td></tr>
+<tr class="separator:a169be93b4c4f4324202173aa4aba9ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad65e1680c9e2fa1955b134013f0c95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a8ad65e1680c9e2fa1955b134013f0c95">Do_Chk_Enc</a> (int cardNo, int equipNo)</td></tr>
+<tr class="memdesc:a8ad65e1680c9e2fa1955b134013f0c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the effect of using an equip.  <a href="global_8h.html#a8ad65e1680c9e2fa1955b134013f0c95">More...</a><br /></td></tr>
+<tr class="separator:a8ad65e1680c9e2fa1955b134013f0c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e2aaf290fb1dd1158461ca23e1925db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db">GetCap</a> (int cap, int value)</td></tr>
 <tr class="memdesc:a3e2aaf290fb1dd1158461ca23e1925db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounds a value in a way depending on the cap.  <a href="global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db">More...</a><br /></td></tr>
 <tr class="separator:a3e2aaf290fb1dd1158461ca23e1925db"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -83,6 +92,45 @@ Functions</h2></td></tr>
 <tr class="separator:a931edd4c23ae4a67b35678e9a3e9ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5db194607081af07cc8700be412b4a31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db194607081af07cc8700be412b4a31">&#9670;&nbsp;</a></span>CheckLandAgreement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CheckLandAgreement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a1e35064f4b70226adc63b8fe1af7ddf8">Field</a>&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return how a terrain supports a unit. </p>
+<p>This function is the same as Do_CheckLandAgreement except if the unit is invalid it returns 0. Note that this function does not check if unit is NULL before dereferencing it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>The terrain type </td></tr>
+    <tr><td class="paramname">unit</td><td>The unit to check the compatibility of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for no affect, 1 for power up, 2 for power down </dd></dl>
+
+</div>
+</div>
 <a id="a0d59c9c43cae2873e93194cc2c8970bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d59c9c43cae2873e93194cc2c8970bd">&#9670;&nbsp;</a></span>ConvUnitIDtoFlagList()</h2>
 
@@ -126,6 +174,100 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The modified flaglist </dd></dl>
+
+</div>
+</div>
+<a id="a169be93b4c4f4324202173aa4aba9ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169be93b4c4f4324202173aa4aba9ebb">&#9670;&nbsp;</a></span>Do_CheckLandAgreement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Do_CheckLandAgreement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a1e35064f4b70226adc63b8fe1af7ddf8">Field</a>&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return how a terrain supports a unit. </p>
+<p>This function goes off unit-&gt;kind, except for Toon terrain in which case it goes off unit-&gt;cardNo. For non-Toon terrains, the effects are as follows:</p>
+<p>Forest -&gt; Power up Beast, Beast-Warrior, Insect, Plant, Pyro, power down Fiend</p>
+<p>Wasteland -&gt; Power up Dinosaur, Machine, Rock, Zombie, power down Aqua, Fish, Plant, Sea Serpent</p>
+<p>Mountain -&gt; Power up Dragon, Fairy, Thunder, Winged Beast, power down Zombie</p>
+<p>Meadow -&gt; Power up Beast-Warrior, Warrior, power down Spellcaster</p>
+<p>Sea -&gt; Power up Aqua, Fish, Sea Serpent, Thunder, power down Machine, Pyro</p>
+<p>Dark -&gt; Power up Fiend, Spellcaster, Zombie, power down Fairy</p>
+<p>Normal -&gt; No effect</p>
+<p>Labyrinth -&gt; No effect</p>
+<p>Crush -&gt; Power up Immortal</p>
+<p>Note this function does not check if <a class="el" href="struct_unit.html">Unit</a> is NULL before dereferencing it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>The terrain type </td></tr>
+    <tr><td class="paramname">unit</td><td>The unit to check the compatibility of </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 for no affect, 1 for power up, 2 for power down </dd></dl>
+
+</div>
+</div>
+<a id="a8ad65e1680c9e2fa1955b134013f0c95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad65e1680c9e2fa1955b134013f0c95">&#9670;&nbsp;</a></span>Do_Chk_Enc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Do_Chk_Enc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cardNo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>equipNo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the effect of using an equip. </p>
+<p>If the equip will not work, the function returns 999. One thing to note is this function does not use the monster's type for determining if Violet Crystal works, and instead looks up EnchMatch for that like every other equip.</p>
+<p>Otherwise the function returns the equip in the lower 14 bits, some info in the next 16, and the next bit is 1 if the result is a fusion. For fusions, the 16 bits of info is the card ID of the resulting monster. For other equips, the info represents the animation and is as follows:</p>
+<p>536 -&gt; normal equip animation</p>
+<p>537 -&gt; Riryoku animation</p>
+<p>540 -&gt; Crush Card animation</p>
+<p>541 -&gt; Paralyzing Potion animation</p>
+<p>542 -&gt; Cursebreaker animation</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cardNo</td><td>Monster card to apply the equip to </td></tr>
+    <tr><td class="paramname">equipNo</td><td>Equip card to apply to the monster </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An int representing the result </dd></dl>
 
 </div>
 </div>

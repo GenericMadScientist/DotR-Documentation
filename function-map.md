@@ -31,11 +31,15 @@
 | 1E22B0  | int SzDuel_GetField(int, int)                                         | szduel.h  |
 | 1F2980  | int SzModel_GetModelType(int)                                         | szmodel.h |
 | 215D30  | int SzData_GetRank(int, int)                                          | szdata.h  |
+| 2487A0  | int Do_Chk_Enc(int, int)                                              | global.h  |
+| 2492F0  | bool Ta_GetToonAgreement(int)                                         | ta.h      |
 | 2494D0  | int TaEnc_GetRandomElf(void)                                          | taenc.h   |
 | 24C780  | int ConvUnitIDtoFlagList(int, int, int)                               | global.h  |
 | 24C910  | void TaUtil_GetUnitLst(int, SideComp, unsigned short *)               | tautil.h  |
 | 24DD80  | bool Ta_SideMatch(int, int, SideComp)                                 | ta.h      |
 | 24DE70  | int Ta_GetCurrentSide(int, int)                                       | ta.h      |
+| 24DEB0  | int CheckLandAgreement(Field, Unit *)                                 | global.h  |
+| 24DF80  | int Do_CheckLandAgreement(Field, Unit *)                              | global.h  |
 | 250360  | int Ta_IsUnitControl(int, int)                                        | ta.h      |
 | 250370  | int Ta_IsUnitControl2(Unit *)                                         | ta.h      |
 | 250740  | Effect * Ta_GetUnitEffect(int, int, int)                              | ta.h      |

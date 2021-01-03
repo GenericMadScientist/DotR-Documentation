@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Duelists of the Roses: CardEffects Union Reference</title>
+<title>Duelists of the Roses: EquipData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">CardEffects Union Reference</div>  </div>
+<div class="title">EquipData Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -72,50 +72,61 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa563d634b69266fcf4f43c7117e06dd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_card_effects.html#aa563d634b69266fcf4f43c7117e06dd5">effects</a> [5]</td></tr>
-<tr class="separator:aa563d634b69266fcf4f43c7117e06dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0473b960988da7323303ea693e7af496"><td class="memItemLeft" align="right" valign="top">LeaderAbilities&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_card_effects.html#a0473b960988da7323303ea693e7af496">leaderAbilities</a></td></tr>
-<tr class="separator:a0473b960988da7323303ea693e7af496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbf1cee080156648cd937fd8423ba4f"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equip_data.html#a6fbf1cee080156648cd937fd8423ba4f">ids</a> [50]</td></tr>
+<tr class="separator:a6fbf1cee080156648cd937fd8423ba4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6634b1c99bbea849abd4d2a745aa50"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_equip_data.html#acc6634b1c99bbea849abd4d2a745aa50">scores</a> [50]</td></tr>
+<tr class="separator:acc6634b1c99bbea849abd4d2a745aa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This union represents the effects of a unit. effects is for a card's normal effects, leaderAbilities are used for leaders. </p>
+<div class="textblock"><p>This struct represents some information related to the 49 equip cards. I haven't checked the spare entry's purpose, but it might just be because Toon compatability is treated as a 50th equip. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="aa563d634b69266fcf4f43c7117e06dd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa563d634b69266fcf4f43c7117e06dd5">&#9670;&nbsp;</a></span>effects</h2>
+<a id="a6fbf1cee080156648cd937fd8423ba4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fbf1cee080156648cd937fd8423ba4f">&#9670;&nbsp;</a></span>ids</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_effect.html">Effect</a> CardEffects::effects[5]</td>
+          <td class="memname">unsigned char EquipData::ids[50]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The five effects for a card, in the order of:</p>
-<p>0 - Attack</p>
-<p>1 - Movement</p>
-<p>2 - Nature <a class="el" href="struct_effect.html">Effect</a></p>
-<p>3 - Flip</p>
-<p>4 - Destruction </p>
+<p>Stores the type of effect an equip has, as follows:</p>
+<p>0 -&gt; standard power increase</p>
+<p>1 -&gt; add effect (Anti-Magic Fragrance, Crush Card, etc.)</p>
+<p>2 -&gt; Cursebreaker</p>
+<p>3 -&gt; Paralyzing Potion</p>
+<p>4 -&gt; fusion (Cocoon of Evolution, Elegant Egotist, etc.) </p>
 
 </div>
 </div>
-<a id="a0473b960988da7323303ea693e7af496"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0473b960988da7323303ea693e7af496">&#9670;&nbsp;</a></span>leaderAbilities</h2>
+<a id="acc6634b1c99bbea849abd4d2a745aa50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc6634b1c99bbea849abd4d2a745aa50">&#9670;&nbsp;</a></span>scores</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LeaderAbilities CardEffects::leaderAbilities</td>
+          <td class="memname">unsigned short EquipData::scores[50]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The leader abilities for a deck leader. </p>
+<p>For most equips this stores how much the equip strengthens a card by. The exceptions are as follows:</p>
+<p>0 -&gt; Riryoku</p>
+<p>1 -&gt; Multiply</p>
+<p>2 -&gt; Sword of Dragon's Soul</p>
+<p>3 -&gt; Enchanted Javelin</p>
+<p>4 -&gt; Anti-Magic Fragrance</p>
+<p>5 -&gt; Crush Card</p>
+<p>6 -&gt; Elegant Egotist</p>
+<p>7 -&gt; Cocoon of Evolution</p>
+<p>8 -&gt; Metalmorph</p>
+<p>9 -&gt; Insect Imitation</p>
+<p>666 -&gt; Cursebreaker, Paralyzing Potion </p>
 
 </div>
 </div>
-<hr/>The documentation for this union was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="structs_8h_source.html">structs.h</a></li>
 </ul>
 </div><!-- contents -->

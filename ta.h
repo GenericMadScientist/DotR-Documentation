@@ -32,6 +32,13 @@ int Ta_GetCurrentSide(int side, int pos);
  */
 int Ta_GetLDParamOfs2(Unit* unit, int col, int row);
 
+/** @brief Get if a card is boosted by Toon.
+ *
+ *  @param cardNo The card ID to check
+ *  @return If the card is boosted on Toon terrain
+ */
+bool Ta_GetToonAgreement(int cardNo);
+
 /** @brief Return an effect of the unit specified by a side and position.
  *
  *  If the unit is invalid or if effInd does not lie between 0 and 4 inclusive

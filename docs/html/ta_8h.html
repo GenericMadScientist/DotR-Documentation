@@ -80,6 +80,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad55d2539a671e58a614af9d7a885d24e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad55d2539a671e58a614af9d7a885d24e">Ta_GetLDParamOfs2</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, int col, int row)</td></tr>
 <tr class="memdesc:ad55d2539a671e58a614af9d7a885d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stat bonuses from the two leaders.  <a href="ta_8h.html#ad55d2539a671e58a614af9d7a885d24e">More...</a><br /></td></tr>
 <tr class="separator:ad55d2539a671e58a614af9d7a885d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4b00ff66dcc60f8be10cbca0ab1f27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#afc4b00ff66dcc60f8be10cbca0ab1f27">Ta_GetToonAgreement</a> (int cardNo)</td></tr>
+<tr class="memdesc:afc4b00ff66dcc60f8be10cbca0ab1f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if a card is boosted by Toon.  <a href="ta_8h.html#afc4b00ff66dcc60f8be10cbca0ab1f27">More...</a><br /></td></tr>
+<tr class="separator:afc4b00ff66dcc60f8be10cbca0ab1f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78d673fe050da9f0b11855154727f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">Ta_GetUnitEffect</a> (int side, int pos, int effInd)</td></tr>
 <tr class="memdesc:ad78d673fe050da9f0b11855154727f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an effect of the unit specified by a side and position.  <a href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">More...</a><br /></td></tr>
 <tr class="separator:ad78d673fe050da9f0b11855154727f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,7 +193,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the stat bonuses from the two leaders. </p>
-<p>This gets the change in stats due to Increased Strength for Same Type Friendlies and Weaken Specific Enemy Type. SzDuel_GetUnitLevel is used to calculate the changes, rather than the data embedded in <a class="el" href="struct_leader_abilities.html">LeaderAbilities</a>.</p>
+<p>This gets the change in stats due to Increased Strength for Same Type Friendlies and Weaken Specific Enemy Type. SzDuel_GetUnitLevel is used to calculate the changes, rather than the data embedded in LeaderAbilities.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">unit</td><td>The unit to be strengthened and/or weakened </td></tr>
@@ -200,6 +203,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The stat bonuses the leaders apply to unit </dd></dl>
+
+</div>
+</div>
+<a id="afc4b00ff66dcc60f8be10cbca0ab1f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4b00ff66dcc60f8be10cbca0ab1f27">&#9670;&nbsp;</a></span>Ta_GetToonAgreement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_GetToonAgreement </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cardNo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get if a card is boosted by Toon. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cardNo</td><td>The card ID to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the card is boosted on Toon terrain </dd></dl>
 
 </div>
 </div>

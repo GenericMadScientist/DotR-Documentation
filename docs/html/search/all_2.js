@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['datadeck_11',['DataDeck',['../struct_data_deck.html',1,'']]],
-  ['dpboost_12',['dpBoost',['../struct_unit.html#ac2af6f87929b40f5007dfd82f15c5b4d',1,'Unit']]],
-  ['dpwithflags_13',['dpWithFlags',['../struct_card_const_info.html#a26915a080456e846d932b2b6542d2148',1,'CardConstInfo']]],
-  ['duelists_20of_20the_20roses_20documentation_14',['Duelists of the Roses Documentation',['../index.html',1,'']]]
+  ['datadeck_12',['DataDeck',['../struct_data_deck.html',1,'']]],
+  ['do_5fchecklandagreement_13',['Do_CheckLandAgreement',['../global_8h.html#a169be93b4c4f4324202173aa4aba9ebb',1,'global.h']]],
+  ['do_5fchk_5fenc_14',['Do_Chk_Enc',['../global_8h.html#a8ad65e1680c9e2fa1955b134013f0c95',1,'global.h']]],
+  ['dpboost_15',['dpBoost',['../struct_unit.html#ac2af6f87929b40f5007dfd82f15c5b4d',1,'Unit']]],
+  ['dpwithflags_16',['dpWithFlags',['../struct_card_const_info.html#a26915a080456e846d932b2b6542d2148',1,'CardConstInfo']]],
+  ['duelists_20of_20the_20roses_20documentation_17',['Duelists of the Roses Documentation',['../index.html',1,'']]]
 ];

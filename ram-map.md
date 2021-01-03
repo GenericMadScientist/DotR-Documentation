@@ -3,6 +3,8 @@
 | Address | Data                                 | Size   | File      |
 | ------- | ------------------------------------ | ------ | --------- |
 | 28F850  | unsigned long long seed              |      8 | stdlib.h  |
+| 29D4E0  | EquipData EnchData                   |    150 | taenc.h   |
+| 29D580  | unsigned char EnchMatch[683][7]      |   4781 | taenc.h   |
 | 2C3338  | LeaderAbilities leaderAbilities[683] |  13660 | szduel.h  |
 | 2C9DF0  | Effect monsterEffects[256][5]        |  10240 | szduel.h  |
 | 2CC5F0  | Effect magicEffects[171]             |   1368 | szduel.h  |

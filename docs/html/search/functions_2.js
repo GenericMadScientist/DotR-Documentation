@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['memcpy_135',['memcpy',['../stdlib_8h.html#a82c26cd350df88414f825bca40183ec2',1,'stdlib.h']]],
-  ['memset_136',['memset',['../stdlib_8h.html#ab229cfa9b9367a8ca2819d8ca0f46e4f',1,'stdlib.h']]]
+  ['getcap_146',['GetCap',['../global_8h.html#a3e2aaf290fb1dd1158461ca23e1925db',1,'global.h']]],
+  ['getparcap_147',['GetParCap',['../global_8h.html#a931edd4c23ae4a67b35678e9a3e9ce53',1,'global.h']]]
 ];

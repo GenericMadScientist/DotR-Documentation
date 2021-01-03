@@ -15,10 +15,15 @@ extern LeaderAbilities leaderAbilities[683];
  *
  *  Array of effects for every effect monster in the game. The order of the
  *  effects are:
+ *
  *  0 - Attack
+ *
  *  1 - Movement
+ *
  *  2 - Nature Effect
+ *
  *  3 - Flip
+ *
  *  4 - Destruction
  */
 extern Effect monsterEffects[256][5];
