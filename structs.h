@@ -176,11 +176,18 @@ union CardEffects {
 
 /*! This struct comes up in SzModel_GetModelType. */
 struct Model {
-    char unk_0x0[408];
+    char unk_0x0[16];
+    int unk_0x10;
+    int unk_0x14;
+    int unk_0x18;
+    int unk_0x1C;
+    char unk_0x20[376];
     float unk_0x198;
     char unk_0x19C[68];
     char unk_0x1E0;
-    char unk_0x1E1[18];
+    char unk_0x1E1[3];
+    float unk_0x1E4;
+    char unk_0x1E8[11];
     /*! The model type returned by SzModel_GetModelType. */
     signed char type;
     char unk_0x1F4[27];
