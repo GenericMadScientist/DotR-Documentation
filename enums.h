@@ -95,6 +95,24 @@ enum LeaderRank {
     SD = 12
 };
 
+/*! Represents the types of searches we can do. */
+enum SearchType {
+    ZOMBIE = 2,
+    WINGED_BEAST = 6,
+    FIEND = 7,
+    MACHINE = 14,
+    THUNDER = 15,
+    AQUA = 16,
+    PYRO = 17,
+    PLANT = 19,
+    LIGHT = 20,
+    DARK = 21,
+    WIND = 25,
+    MONSTER = 29,
+    /*! Female monsters are monsters that take Electro-Whip */
+    FEMALE = 49
+};
+
 /*! Represents a policy to use with matching sides. */
 enum SideComp {
     NEVER_MATCH = 0,

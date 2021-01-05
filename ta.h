@@ -32,6 +32,19 @@ int Ta_GetCurrentSide(int side, int pos);
  */
 int Ta_GetLDParamOfs2(Unit* unit, int col, int row);
 
+/** @brief Gets the non-apBoost/dpBoost stat bonuses to unit
+ *
+ *  This takes into account Shapesnatch's effect, nature effects that power up
+ *  or power down cards, terrain, and leader abilities.
+ *
+ *  @param unit The unit to be strengthened and/or weakened
+ *  @param col The column unit is to be on
+ *  @param row The row unit is to be on
+ *  @param isAtk Whether the stat of interest is attack or defense
+ *  @return The stat bonuses to be applied to the unit
+ */
+int Ta_GetParamOfs(Unit* unit, int col, int row, bool isAtk);
+
 /** @brief Get if a card is boosted by Toon.
  *
  *  @param cardNo The card ID to check
@@ -39,16 +52,38 @@ int Ta_GetLDParamOfs2(Unit* unit, int col, int row);
  */
 bool Ta_GetToonAgreement(int cardNo);
 
+/** @brief Get if unit matches side and the search mode.
+ *
+ *  The only supported SearchType values are as follows:
+ *  Zombie, Winged Beast, Fiend, Machine, Thunder, Aqua, Pyro, Plant, Light,
+ *  Dark, Wind, Monster, and Female. Any other value is ignored and the function
+ *  will return false in that case. These values are exactly the ones needed for
+ *  Nature Effects that power up or power down cards.
+ *
+ *  @param unit The unit to check
+ *  @param side The side to check
+ *  @param compMode The way to compare side and the side controlling unit
+ *  @param searchMode The search types to check
+ *  @return If the card matches searchMode and side in the specified way
+ */
+bool Ta_GetUnitAgreeWithVarInfo(
+    Unit* unit, int side, SideComp compMode, SearchType searchMode);
+
 /** @brief Return an effect of the unit specified by a side and position.
  *
  *  If the unit is invalid or if effInd does not lie between 0 and 4 inclusive
  *  then NULL is returned. Otherwise cardEffects is interpreted as an array of
  *  5 Effects and a pointer to the effInd'th element is returned. effInd
  *  corresponds to the following types of effect:
+ *
  *  0 - Attack
+ *
  *  1 - Movement
+ *
  *  2 - Nature Effect
+ *
  *  3 - Flip
+ *
  *  4 - Destruction
  *
  *  The only difference between this and SzDuel_GetUnitEffect is if the effect
@@ -221,9 +256,13 @@ int Ta_SearchUncTypeNaturalEffectUserNumWithSide(int effect, int side);
 /** @brief Return if two sides match according to compMode.
  *
  *  If compMode is ALWAYS_MATCH, the result is true.
+ *
  *  If compMode is MATCH_IF_EQUAL, the result is sideA == sideB.
+ *
  *  If compMode is MATCH_IF_NOT_EQUAL, the result is sideA == !sideB.
+ *
  *  If compMode is NEVER_MATCH, the result is false.
+ *
  *  If compMode is anything else, the result is false.
  *
  *  @param sideA The first side to compare

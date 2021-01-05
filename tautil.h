@@ -5,6 +5,30 @@
 
 #include "enums.h"
 
+/** @brief Get the attack of unit if it were at a specified position.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param col The column unit is to be on
+ *  @param row The row unit is to be on
+ *  @return The attack of the unit
+ */
+int TaUtil_GetUnitAP(int side, int pos, int col, int row);
+
+/** @brief Get the defense of unit if it were at a specified position.
+ *
+ *  @param side The side (Lancastrian/Yorkist/???) to get the unit from, or
+ *  negative if pos is an index into models
+ *  @param pos The index into the subarray of side's units, or into models if
+ *  side is negative
+ *  @param col The column unit is to be on
+ *  @param row The row unit is to be on
+ *  @return The defense of the unit
+ */
+int TaUtil_GetUnitDP(int side, int pos, int col, int row);
+
 /** @brief Fills the ownerIds of the units matching side into units.
  *
  *  This function loops over all 20 possible cards on the field and fills units

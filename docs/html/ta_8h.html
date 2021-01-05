@@ -80,9 +80,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ad55d2539a671e58a614af9d7a885d24e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad55d2539a671e58a614af9d7a885d24e">Ta_GetLDParamOfs2</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, int col, int row)</td></tr>
 <tr class="memdesc:ad55d2539a671e58a614af9d7a885d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the stat bonuses from the two leaders.  <a href="ta_8h.html#ad55d2539a671e58a614af9d7a885d24e">More...</a><br /></td></tr>
 <tr class="separator:ad55d2539a671e58a614af9d7a885d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22125164fb88f5942e03095617ca1fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ae22125164fb88f5942e03095617ca1fd">Ta_GetParamOfs</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, int col, int row, bool isAtk)</td></tr>
+<tr class="memdesc:ae22125164fb88f5942e03095617ca1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the non-apBoost/dpBoost stat bonuses to unit.  <a href="ta_8h.html#ae22125164fb88f5942e03095617ca1fd">More...</a><br /></td></tr>
+<tr class="separator:ae22125164fb88f5942e03095617ca1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4b00ff66dcc60f8be10cbca0ab1f27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#afc4b00ff66dcc60f8be10cbca0ab1f27">Ta_GetToonAgreement</a> (int cardNo)</td></tr>
 <tr class="memdesc:afc4b00ff66dcc60f8be10cbca0ab1f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if a card is boosted by Toon.  <a href="ta_8h.html#afc4b00ff66dcc60f8be10cbca0ab1f27">More...</a><br /></td></tr>
 <tr class="separator:afc4b00ff66dcc60f8be10cbca0ab1f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c46f32b2a69194618e026e23db7c3a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#a4c46f32b2a69194618e026e23db7c3a6">Ta_GetUnitAgreeWithVarInfo</a> (<a class="el" href="struct_unit.html">Unit</a> *unit, int side, <a class="el" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a> compMode, <a class="el" href="enums_8h.html#a15cc00b2ac3048d3b89959ced9ba0520">SearchType</a> searchMode)</td></tr>
+<tr class="memdesc:a4c46f32b2a69194618e026e23db7c3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if unit matches side and the search mode.  <a href="ta_8h.html#a4c46f32b2a69194618e026e23db7c3a6">More...</a><br /></td></tr>
+<tr class="separator:a4c46f32b2a69194618e026e23db7c3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad78d673fe050da9f0b11855154727f1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_effect.html">Effect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">Ta_GetUnitEffect</a> (int side, int pos, int effInd)</td></tr>
 <tr class="memdesc:ad78d673fe050da9f0b11855154727f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an effect of the unit specified by a side and position.  <a href="ta_8h.html#ad78d673fe050da9f0b11855154727f1c">More...</a><br /></td></tr>
 <tr class="separator:ad78d673fe050da9f0b11855154727f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +212,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae22125164fb88f5942e03095617ca1fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22125164fb88f5942e03095617ca1fd">&#9670;&nbsp;</a></span>Ta_GetParamOfs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ta_GetParamOfs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isAtk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the non-apBoost/dpBoost stat bonuses to unit. </p>
+<p>This takes into account Shapesnatch's effect, nature effects that power up or power down cards, terrain, and leader abilities.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>The unit to be strengthened and/or weakened </td></tr>
+    <tr><td class="paramname">col</td><td>The column unit is to be on </td></tr>
+    <tr><td class="paramname">row</td><td>The row unit is to be on </td></tr>
+    <tr><td class="paramname">isAtk</td><td>Whether the stat of interest is attack or defense </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The stat bonuses to be applied to the unit </dd></dl>
+
+</div>
+</div>
 <a id="afc4b00ff66dcc60f8be10cbca0ab1f27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc4b00ff66dcc60f8be10cbca0ab1f27">&#9670;&nbsp;</a></span>Ta_GetToonAgreement()</h2>
 
@@ -230,6 +289,59 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>If the card is boosted on Toon terrain </dd></dl>
+
+</div>
+</div>
+<a id="a4c46f32b2a69194618e026e23db7c3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c46f32b2a69194618e026e23db7c3a6">&#9670;&nbsp;</a></span>Ta_GetUnitAgreeWithVarInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Ta_GetUnitAgreeWithVarInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_unit.html">Unit</a> *&#160;</td>
+          <td class="paramname"><em>unit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a>&#160;</td>
+          <td class="paramname"><em>compMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enums_8h.html#a15cc00b2ac3048d3b89959ced9ba0520">SearchType</a>&#160;</td>
+          <td class="paramname"><em>searchMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get if unit matches side and the search mode. </p>
+<p>The only supported SearchType values are as follows: Zombie, Winged Beast, Fiend, Machine, Thunder, Aqua, Pyro, Plant, Light, Dark, Wind, Monster, and Female. Any other value is ignored and the function will return false in that case. These values are exactly the ones needed for Nature Effects that power up or power down cards.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unit</td><td>The unit to check </td></tr>
+    <tr><td class="paramname">side</td><td>The side to check </td></tr>
+    <tr><td class="paramname">compMode</td><td>The way to compare side and the side controlling unit </td></tr>
+    <tr><td class="paramname">searchMode</td><td>The search types to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>If the card matches searchMode and side in the specified way </dd></dl>
 
 </div>
 </div>
@@ -266,7 +378,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return an effect of the unit specified by a side and position. </p>
-<p>If the unit is invalid or if effInd does not lie between 0 and 4 inclusive then NULL is returned. Otherwise cardEffects is interpreted as an array of 5 Effects and a pointer to the effInd'th element is returned. effInd corresponds to the following types of effect: 0 - Attack 1 - Movement 2 - Nature <a class="el" href="struct_effect.html">Effect</a> 3 - Flip 4 - Destruction</p>
+<p>If the unit is invalid or if effInd does not lie between 0 and 4 inclusive then NULL is returned. Otherwise cardEffects is interpreted as an array of 5 Effects and a pointer to the effInd'th element is returned. effInd corresponds to the following types of effect:</p>
+<p>0 - Attack</p>
+<p>1 - Movement</p>
+<p>2 - Nature <a class="el" href="struct_effect.html">Effect</a></p>
+<p>3 - Flip</p>
+<p>4 - Destruction</p>
 <p>The only difference between this and SzDuel_GetUnitEffect is if the effect is not valid (because it is all 0xFFs), this function will return NULL.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -736,7 +853,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return if two sides match according to compMode. </p>
-<p>If compMode is ALWAYS_MATCH, the result is true. If compMode is MATCH_IF_EQUAL, the result is sideA == sideB. If compMode is MATCH_IF_NOT_EQUAL, the result is sideA == !sideB. If compMode is NEVER_MATCH, the result is false. If compMode is anything else, the result is false.</p>
+<p>If compMode is ALWAYS_MATCH, the result is true.</p>
+<p>If compMode is MATCH_IF_EQUAL, the result is sideA == sideB.</p>
+<p>If compMode is MATCH_IF_NOT_EQUAL, the result is sideA == !sideB.</p>
+<p>If compMode is NEVER_MATCH, the result is false.</p>
+<p>If compMode is anything else, the result is false.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sideA</td><td>The first side to compare </td></tr>

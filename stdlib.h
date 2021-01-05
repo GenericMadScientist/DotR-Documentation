@@ -34,10 +34,10 @@ int printf(const char* format, ...);
 void qsort(void* ptr, size_t count, size_t size,
     int (*comp)(const void*, const void*));
 
-/** @brief https://en.cppreference.com/w/c/numeric/math/sin */
-float sinf(float arg);
-
 /** @brief https://en.cppreference.com/w/c/numeric/random/rand */
 int rand(void);
+
+/** @brief https://en.cppreference.com/w/c/numeric/math/sin */
+float sinf(float arg);
 
 #endif

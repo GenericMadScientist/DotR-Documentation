@@ -79,9 +79,9 @@ Unit* SzDuel_GetCardInfo(int side, int pos);
  *  row and col do not lie between 0 and 6 inclusive, this function returns -1
  *  instead.
  *
- *  @param col Column of the desired location.
- *  @param row Row of the desired location.
- *  @return Terrain type of the corresponding square.
+ *  @param col Column of the desired location
+ *  @param row Row of the desired location
+ *  @return Terrain type of the corresponding square
  */
 int SzDuel_GetField(int col, int row);
 

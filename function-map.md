@@ -44,11 +44,15 @@
 | 24DE70  | int Ta_GetCurrentSide(int, int)                                       | ta.h      |
 | 24DEB0  | int CheckLandAgreement(Field, Unit *)                                 | global.h  |
 | 24DF80  | int Do_CheckLandAgreement(Field, Unit *)                              | global.h  |
+| 24ECD0  | bool Ta_GetUnitAgreeWithVarInfo(Unit *, int, SideComp, SearchType)    | ta.h      |
 | 250360  | int Ta_IsUnitControl(int, int)                                        | ta.h      |
 | 250370  | int Ta_IsUnitControl2(Unit *)                                         | ta.h      |
 | 250740  | Effect * Ta_GetUnitEffect(int, int, int)                              | ta.h      |
 | 250860  | int GetCap(int, int)                                                  | global.h  |
 | 2508D0  | int GetParCap(int)                                                    | global.h  |
+| 2509E0  | int TaUtil_GetUnitAP(int, int, int, int)                              | tautil.h  |
+| 250B40  | int TaUtil_GetUnitDP(int, int, int, int)                              | tautil.h  |
+| 2660E0  | int Ta_GetParamOfs(Unit *, int, int, bool)                            | ta.h      |
 | 266C70  | int Ta_SearchUncTypeNaturalEffectUser(int, int)                       | ta.h      |
 | 266DF0  | int Ta_SearchUncTypeNaturalEffectUserNum(int)                         | ta.h      |
 | 266F70  | int Ta_SearchUncTypeNaturalEffectUserNumWithSide(int, int)            | ta.h      |

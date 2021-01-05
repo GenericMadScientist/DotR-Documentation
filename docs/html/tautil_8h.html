@@ -73,11 +73,121 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0a26bdf92a263a654c57bd98b0f32d98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tautil_8h.html#a0a26bdf92a263a654c57bd98b0f32d98">TaUtil_GetUnitAP</a> (int side, int pos, int col, int row)</td></tr>
+<tr class="memdesc:a0a26bdf92a263a654c57bd98b0f32d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attack of unit if it were at a specified position.  <a href="tautil_8h.html#a0a26bdf92a263a654c57bd98b0f32d98">More...</a><br /></td></tr>
+<tr class="separator:a0a26bdf92a263a654c57bd98b0f32d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de69a2f5f5c759518e01ce10fffb829"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tautil_8h.html#a9de69a2f5f5c759518e01ce10fffb829">TaUtil_GetUnitDP</a> (int side, int pos, int col, int row)</td></tr>
+<tr class="memdesc:a9de69a2f5f5c759518e01ce10fffb829"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the defense of unit if it were at a specified position.  <a href="tautil_8h.html#a9de69a2f5f5c759518e01ce10fffb829">More...</a><br /></td></tr>
+<tr class="separator:a9de69a2f5f5c759518e01ce10fffb829"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3c637093548b5bcab79f52fd70adad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tautil_8h.html#a6f3c637093548b5bcab79f52fd70adad">TaUtil_GetUnitLst</a> (int side, <a class="el" href="enums_8h.html#ae23a3b51604d31fc700116c4789f1365">SideComp</a> sideComp, unsigned short *<a class="el" href="szduel_8h.html#a7b24d0ad4cb678df0833baa98964e3ca">units</a>)</td></tr>
 <tr class="memdesc:a6f3c637093548b5bcab79f52fd70adad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the ownerIds of the units matching side into units.  <a href="tautil_8h.html#a6f3c637093548b5bcab79f52fd70adad">More...</a><br /></td></tr>
 <tr class="separator:a6f3c637093548b5bcab79f52fd70adad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a0a26bdf92a263a654c57bd98b0f32d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a26bdf92a263a654c57bd98b0f32d98">&#9670;&nbsp;</a></span>TaUtil_GetUnitAP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TaUtil_GetUnitAP </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the attack of unit if it were at a specified position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+    <tr><td class="paramname">col</td><td>The column unit is to be on </td></tr>
+    <tr><td class="paramname">row</td><td>The row unit is to be on </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The attack of the unit </dd></dl>
+
+</div>
+</div>
+<a id="a9de69a2f5f5c759518e01ce10fffb829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de69a2f5f5c759518e01ce10fffb829">&#9670;&nbsp;</a></span>TaUtil_GetUnitDP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TaUtil_GetUnitDP </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>side</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the defense of unit if it were at a specified position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>The side (Lancastrian/Yorkist/???) to get the unit from, or negative if pos is an index into models </td></tr>
+    <tr><td class="paramname">pos</td><td>The index into the subarray of side's units, or into models if side is negative </td></tr>
+    <tr><td class="paramname">col</td><td>The column unit is to be on </td></tr>
+    <tr><td class="paramname">row</td><td>The row unit is to be on </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The defense of the unit </dd></dl>
+
+</div>
+</div>
 <a id="a6f3c637093548b5bcab79f52fd70adad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f3c637093548b5bcab79f52fd70adad">&#9670;&nbsp;</a></span>TaUtil_GetUnitLst()</h2>
 
