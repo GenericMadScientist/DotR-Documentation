@@ -5,7 +5,7 @@
 
 #include "structs.h"
 
-/** @brief Address 31ABB0
+/** @brief Address 32ABB0
  *
  *  Models 20 to 24 appear to be Lancastrian monsters, 25 to 29 Yorkist
  *  monsters, 30 Lancastrian Deck Leader, and 31 Yorkist Deck Leader.

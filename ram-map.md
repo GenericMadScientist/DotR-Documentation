@@ -11,6 +11,6 @@
 | 317388  | int menuNums[37]                     |    148 | szgame.h  |
 | 318280  | Unit units[3][11]                    |   3036 | szduel.h  |
 | 318E60  | MapInfo mapInfo[7][7]                |   1372 | szduel.h  |
-| 31ABB0  | Model *models[84]                    |    336 | szmodel.h |
+| 32ABB0  | Model *models[84]                    |    336 | szmodel.h |
 | 32F790  | SaveData saveData[2]                 | 130880 | szdata.h  |
 | 34F6D0  | unsigned char roseFlag               |      1 | szdata.h  |
