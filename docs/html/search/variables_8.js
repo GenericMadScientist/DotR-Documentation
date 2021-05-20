@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['magiceffects_233',['magicEffects',['../szduel_8h.html#acf2457a4c19954c85f807c602f1ad516',1,'szduel.h']]],
-  ['mapinfo_234',['mapInfo',['../szduel_8h.html#a6efa6cd7ac6a97eb9d0412a07c2e7b79',1,'szduel.h']]],
-  ['menunums_235',['menuNums',['../szgame_8h.html#adde85f7b6c1db5bf10ee63c13ae39436',1,'szgame.h']]],
-  ['models_236',['models',['../szmodel_8h.html#abeb152a3e7914956af5e2fd0acb75d9e',1,'szmodel.h']]],
-  ['monstereffects_237',['monsterEffects',['../szduel_8h.html#acf1c964e87a6439527698377ace94661',1,'szduel.h']]]
+  ['leaderabilities_234',['leaderAbilities',['../union_card_effects.html#a0473b960988da7323303ea693e7af496',1,'CardEffects::leaderAbilities()'],['../structs_8h.html#ae094c57b5e9b495a064415e0d4c8e720',1,'leaderAbilities():&#160;structs.h'],['../szduel_8h.html#a082e99f03c26bb3259814b0301090a29',1,'leaderAbilities():&#160;szduel.h']]],
+  ['loccol_235',['locCol',['../struct_unit.html#a4878a796624c66a4bb9183a52b8bc703',1,'Unit']]],
+  ['locrow_236',['locRow',['../struct_unit.html#af6e46d85efe688aad0c7cc6f5666997b',1,'Unit']]],
+  ['lvattr_237',['lvAttr',['../struct_card_const_info.html#a7d42edf225bdd443a6b9d4c730c43380',1,'CardConstInfo']]],
+  ['lvrev_238',['lvRev',['../struct_unit.html#ae63ce57632c517d6991dfcc0204d482d',1,'Unit']]]
 ];

@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['savedata_240',['saveData',['../szdata_8h.html#ab0f04b7844cbb13039f06abbfe20007c',1,'szdata.h']]],
-  ['scores_241',['scores',['../struct_equip_data.html#acc6634b1c99bbea849abd4d2a745aa50',1,'EquipData']]],
-  ['seed_242',['seed',['../stdlib_8h.html#a2602eb5b295232e15de248591444989f',1,'stdlib.h']]],
-  ['side_243',['side',['../struct_unit.html#a1c0c832c99a4639b0f3d6e32c7715235',1,'Unit']]],
-  ['slot_244',['slot',['../struct_unit.html#aa64a179e0c9e0844284b14e396bc6018',1,'Unit']]],
-  ['status_245',['status',['../struct_unit.html#a0bc4b677f711f0d7f20b9716fab28c60',1,'Unit']]],
-  ['summonorder_246',['summonOrder',['../struct_unit.html#abe1f5ff52767fd7ad803ed79b435824c',1,'Unit']]]
+  ['rankwithflags_243',['rankWithFlags',['../struct_card_info.html#a77183544f6d9c55c85beb9ae26cae37e',1,'CardInfo']]],
+  ['roseflag_244',['roseFlag',['../szdata_8h.html#ac63e6e29ea6f83262d7fa0d9b2b75541',1,'szdata.h']]]
 ];
